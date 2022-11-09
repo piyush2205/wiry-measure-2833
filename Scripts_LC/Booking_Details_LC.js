@@ -25,7 +25,7 @@ next_button.onclick = ()=>{
     Get_Data(event)
 }
 
-let Get_Data = (ev)=>{
+let Get_Data = async(ev)=>{
     ev.preventDefault()
     let form = document.getElementById("bookform");
 
@@ -36,8 +36,30 @@ let Get_Data = (ev)=>{
     let p = form.people.value;
     let r = form.roomtype.value;
     let d = form.checkdate.value;
-    // let a = form.price.value;
-    console.log(e,n,m,c,p,r,d)
+
+    // let a = form.roomtype.pr;
+    // let a = document.getElementById("price").innerText = r;
+    
+    // console.log(e,n,m,c,p,r,d)
+    let data = {
+        email : e,
+        name : n,
+        mobile: m,
+        city : c,
+        people : p,
+        roomtype : r,
+        date : d, 
+    }
+    console.log(data);
+
+let res = await fetch(url,{
+    method : "POST",
+    body: JSON.stringify(data),
+    headers: {
+        "Content-Type" : "application/json"
+    }
+    
+})
 
 }
 
