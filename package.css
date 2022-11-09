@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#v_main{
+    width: 90%;
+    height: auto;
+    margin: 10px 5%;
+}
+#v_main h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+#v_main p{
+    line-height:30px;
+    color: #333333;
+}
