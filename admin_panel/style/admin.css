@@ -23,6 +23,7 @@
     height: 100%;
     background:#8c52ff;
     z-index: 100;
+    transition:width 300ms
 }
 .am_sidebar_logo{
     padding: 1rem 0rem 1rem 2rem;
@@ -53,8 +54,33 @@
     font-size: 1.5rem;
     padding-right: 1rem;
 }
+#nav-toggle:checked + .am_sidebar{
+    width: 70px;
+}
+#nav-toggle:checked + .am_sidebar li{
+    padding-left:1rem;
+    text-align: center;
+}
+#nav-toggle:checked + .am_sidebar li a{
+    padding-left:0rem;
+}
 
+#nav-toggle:checked + .am_sidebar .am_sidebar_logo img,
+#nav-toggle:checked + .am_sidebar li a span:last-child{
+    display: none;
+}
+#nav-toggle:checked ~ .am_main-content{
+    margin-left: 70px;
+    width: calc(100% - 70px);
+    left:70px;
+}
+#nav-toggle:checked ~ .am_main-content header{
+    margin-left: 0px;
+    width: calc(100% - 70px);
+    left:70px;
+}
 .am_main-content{
+    transform: margin-left 400ms;
     margin-left: 345px;
 
 }
@@ -62,6 +88,7 @@
     margin-top: 15px;
 } */
 header{
+    background: #fff;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
@@ -71,6 +98,10 @@ header{
     width: calc(100% - 345px);
     top:0;
     z-index: 100;
+    transform: left 300ms;
+}
+#nav-toggle{
+    display: none;
 }
 header h2{
     color: #222;
@@ -150,7 +181,7 @@ main{
     margin-top: 3.5rem;
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 67% auto;
+    grid-template-columns: 65% auto;
 }
 .card{
     background: #fff;
@@ -179,7 +210,7 @@ table{
 }
 thead tr{
     border: 1px solid #f0f0f0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
 }
 thead td{
     font-weight: 700;
@@ -188,4 +219,128 @@ td{
     padding: .5rem 1rem;
     font-size: .9rem;
     color: #222;
+}
+td .status{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+tr td:last-child{
+    display: flex;
+    align-items: center;
+    
+}
+.status.green{
+    background: green;
+}
+.status.yellow{
+    background: yellow;
+}
+.status.red{
+    background: red;
+}
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+.customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.info{
+    display: flex;
+    align-items: center;   
+}
+.info img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.info h4{
+    font-size: .8rem;
+    font-weight: 700;
+    color: #222;
+}
+.info small{
+    font-weight: 600;
+    color: var(--text-grey);
+}
+
+.contact span{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: .5rem;
+    color: var(--main-color);
+}
+@media only screen and (max-width:1200px){
+    .am_sidebar{
+        width: 70px;
+    }
+    .am_sidebar li{
+        padding-left: 1rem;
+        text-align: center;
+    }
+    .am_sidebar li a{
+        padding-left: 0rem;
+    }
+    .am_sidebar .am_sidebar_logo img,
+    .am_sidebar li a span:last-child{
+        display: none;
+    }
+    .am_main-content{
+        margin-left: 70px;
+    }
+    .am_main-content header{
+        width: calc(100% - 70px);
+        left:70px;
+    }
+    .am_sidebar:hover{
+        width: 345px;
+        z-index: 200;
+    }
+    .am_sidebar:hover li{
+        padding-left: 2rem;
+        text-align: left;
+    }
+    .am_sidebar:hover li a{
+        padding-left: 1rem;
+    }
+    .am_sidebar:hover .am_sidebar_logo img,
+    .am_sidebar:hover li a span:last-child{
+        display: inlie
+    }
+    
+}
+
+@media only screen and (max-width: 960px){
+    .am_cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .packages_grid{
+        grid-template-columns: 50% 50%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .am_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .packages_grid{
+        grid-template-columns: 100%;
+    }
+    .am_search-warpper{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:768px){
+    .am_cards{
+        grid-template-columns: 100%;
+    }
 }
