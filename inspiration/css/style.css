@@ -1,0 +1,258 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+body{
+  width: 80%;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+#TS_topbeachescards{
+  border: 0px solid blue; 
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  gap: 20px;
+}
+#TS_topbeachescards > .TS_cards{
+    width: 90%;
+  /* line-height: 12px; */
+  border: 0px solid black;
+}
+#TS_topbeachescards > .TS_cards > img {
+
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+#TS_tripotoVlog{
+
+  width: 100%;
+  height: 500px;
+  border: 0px solid blue;
+  display: flex;
+  gap: 20px;
+}
+
+.TS_vlogcard{
+
+  width: 30%;
+  /* height: 350px; */
+ border: 0px solid red;
+ /* line-height: 18px; */
+
+}
+.TS_vlogcard>img{
+
+  width: 100%;
+  height: 200px;
+}
+.TS_a{
+  text-decoration: none;
+  color: #2f9bdb;
+}
+#TS_vlogheading{
+  margin-top:30px;
+
+}
+
+/* .slider_body{ */
+  /* min-height: 1vh; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* background-color: #EFEFEF; */
+/* } */
+
+
+.slide-container{
+  /* max-width: 1120px; */
+  width: 100%;
+
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.card{
+  border-radius: 25px;
+  /* background-color: #FFF; */
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  /* background-color: #4070F4; */
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070F4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  /* background-color: #FFF; */
+}
+/* .card-image{
+  position: relative;
+  height: 120px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+} */
+.card-image .card-img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 4%;
+  /* border: 4px solid #4070F4; */
+}
+/* .name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+} */
+.description{
+  font-size: 14px;
+  /* color: #707070; */
+  /* text-align: center; */
+}
+.button{
+  border: none;
+  font-size: 16px;
+  /* color: #FFF; */
+  padding: 8px 16px;
+  /* background-color: #4070F4; */
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background: #265DF2;
+}
+
+.swiper-navBtn{
+  color: #6E93f7;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #4070F4;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #6E93f7;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #4070F4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+#TS_top_vlog{
+   
+  /* width: 90%; */
+  /* height: 300px; */
+  border: 0px solid red;
+   display: flex;
+   line-height: 25px;
+   gap: 20px;
+}
+
+.TS_vlogcard{
+  width: 25%;
+  /* height: 300px; */
+  border: 0px solid black;
+
+}
+.TS_vlogcard>img{
+  width: 100%;
+}
+
+* { box-sizing: border-box; }
+
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.cell{
+
+  width: 33%;
+  height: 250px;
+  margin: 15px;
+  border-radius: 8px;
+
+}
+
+.cell img{
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
