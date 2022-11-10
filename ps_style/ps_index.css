@@ -1,155 +1,128 @@
 *{
-    border: 0px;
-    margin: 0px;
-    box-sizing: border-box;
     font-family: circularairpro-bold,Helvetica,Arial,sans-serif;
     font-weight: 700;
-    list-style: none;
-    text-decoration: none;
 }
-#banner_img{
-    background-position: 50% 30%;
-    object-position: 50% 30%;
-    object-fit: cover;
-    height: 340px;
-    position: absolute;
-    width: 100%;
+#ps_box{
+    border: 1px solid red;
+    margin-top: 200px;
+    /* width: 1171px; */
 }
-#ps_navbar{
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content:space-between;
+#ps_4_option{
+    /* margin-top: 00px; */
+    border: 1px solid black;
+    display: grid;
+    width: 1160px;
+    margin: auto;
     position: relative;
+    grid-template-columns: repeat(4,1fr);
 }
 
-
-.ps_tripguru img{
-    /* border: 1px solid red; */
-    margin-left: 27px;
-    margin-top: 7px;
-    width: 35%;
+#ps_4_option div{
+    border: 1px solid green;
 }
 
-#ps_li_ui{
-    /* border: 1px solid green; */
-    display: flex;
-    gap:20px;
-    color:#fff;
-    font-size: 14px;
+#ps_4_option div img{
+width: 100%;
 }
 
-#ps_li_ui div{
-margin-right: 20px;
-margin-top: 15px;
+#_spotlight{
+border: 2px solid brown;
+margin-top: 50px;
 }
-.dropdown_inspiration{
-    display: none;
+#ps_spotlight{
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
 }
-
-.ps_inspiration:hover .dropdown_inspiration{
-    
-    font-size: 12.5px;
-    cursor: pointer;
-    display:inline;
-    /* border: 1px solid rgb(0, 17, 255); */
-    position: absolute;
-    width: 183px;
-    background-color: #fff;
-    padding: 5px;
-    font-weight: 0px;
-    margin-left: -140px;
-    z-index: 1;
-    height: 400px;
-    margin-top: 17px;
-}
-
-.ps_inspiration:hover .dropdown_inspiration div  a{
-    /* border: 1px solid red; */
-    color: #4b4a4a;
-    margin-left: 10px;
+#ps_spotlight div{
+    border: 1px solid skyblue;
     
 }
-.ps_inspiration:hover .dropdown_inspiration li{
-
-    margin-top: 5px;
-    
-}
-.ps_inspiration:hover .dropdown_inspiration div :hover{
-    width: 170px;
-    height: 25x;
-    background-color: whitesmoke;
-}
-
-.dropdown_publish{
-display: none;
-}
-
-
-.ps_publish:hover .dropdown_publish{
-    font-size: 12.5px;
-    cursor: pointer;
-    display:block;
-    /* border: 1px solid rgb(0, 17, 255); */
-    position: absolute;
-    width: 183px;
-    background-color: #fff;
-    padding: 5px;
-    font-weight: 0px;
-    z-index: 1;
-    height: 120px;
-    /* margin-top: -15px; */
-}
-
-.ps_publish:hover .dropdown_publish div  a{
-    /* border: 1px solid red; */
-    color: #4b4a4a;
-    margin-left: 10px;
-    
-}
-.ps_publish:hover .dropdown_publish div :hover{
-    width: 170px;
-    background-color: whitesmoke;
-}
-
-.ps_div_1 ul a{
-    color: black;
-    margin-top: 20px;
-}
-
-.ps_div_2 a{
-   color: #fff;
-}
-.ps_div_3 a{
-    color: #fff;
- }
-
- .ps_div_5 a{
-    color: #fff;
- }
-
- #ps_title{
-  position: relative;
-  color: #fff;
-  text-align: center;
-  margin-top: 60px;
-  font-family: inherit;
-  line-height: 1.1;
-  font-size: 36px;
- }
-
- #query_ps{
-    margin-left: 30%;
-    margin-top: 1%;
+#ps_spotlight div img{
+    width: 259px;
+    height: 172px;
     border-radius: 5px;
-    width: 630px;
-    /* border: 1px solid red; */
-    height: 52px;
-    padding-left: 20px;
-    padding-right: 33px;
-    position: relative;
- }
+    }
 
- #_search_icon_ps{
-    position: relative;
-    margin-left: -40px;
- }
+    #ps_spotlight div div:nth-child(3)
+    {
+        border: 1px solid darkmagenta;
+        height: 77;
+        width: 259;
+        margin-top: 10px;
+        font-size: 18px;
+        word-wrap: break-word;
+        line-height: 1.5;
+    }
+    #ps_spotlight div div:nth-child(2){
+        color: #F63;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .slide_img_ps{
+        width: 1160px;
+        margin-left: 180px;
+        margin-top: 50px;
+        border-radius: 5px;   
+    }
+    #slideshow_ps_2 img{
+        width: 1160px;
+        margin-left: 180px;
+        margin-top: 50px;
+        border-radius: 5px; 
+    }
+   
+    #_placevisit_ps{
+        border: 2px solid brown;
+margin-top: 50px;
+    }
+
+    #ps_placevisit{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        width: 1160px;
+        margin: auto;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    #ps_placevisit div img{
+        width: 259px;
+        height: 172px;
+        border-radius: 5px;
+        }
+
+
+
+        #ps_placevisit div div:nth-child(3)
+        {
+            border: 1px solid darkmagenta;
+            /* height: 77; */
+            width: 259;
+            margin-top: 10px;
+            
+            /* font-size: 18px; */
+            /* word-wrap: break-word; */
+            /* line-height: 1.5; */
+        }
+        #ps_placevisit div div:nth-child(3) a
+        {
+            border: 1px solid darkmagenta;
+            /* height: 77; */
+        color: #73bce7;
+            
+            font-size: 16px;
+            /* word-wrap: break-word; */
+            /* line-height: 1.5; */
+        }
+        #ps_placevisit div div:nth-child(2){
+            /* color: #F63; */
+            margin-top: 5px;
+            font-size: 18px;
+        }
