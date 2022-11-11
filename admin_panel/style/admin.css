@@ -189,7 +189,11 @@ main{
 }
 .card_body,
 .card_header{
-    padding: 1rem;
+    padding: 2rem;
+}
+.card_img{
+    height: 100px;
+    width: 100px;
 }
 .card_header{
     display: flex;
@@ -220,27 +224,16 @@ td{
     font-size: .9rem;
     color: #222;
 }
-td .status{
-    display: inline-block;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    margin-right: 1rem;
-}
 tr td:last-child{
-    display: flex;
-    align-items: center;
-    
+    /* display: flex; */
+    align-items: center;   
 }
-.status.green{
-    background: green;
-}
-.status.yellow{
+/* .status.yellow{
     background: yellow;
 }
 .status.red{
     background: red;
-}
+} */
 .table-responsive{
     width: 100%;
     overflow-x: auto;
@@ -279,6 +272,7 @@ tr td:last-child{
     margin-left: .5rem;
     color: var(--main-color);
 }
+
 @media only screen and (max-width:1200px){
     .am_sidebar{
         width: 70px;
@@ -300,22 +294,7 @@ tr td:last-child{
     .am_main-content header{
         width: calc(100% - 70px);
         left:70px;
-    }
-    .am_sidebar:hover{
-        width: 345px;
-        z-index: 200;
-    }
-    .am_sidebar:hover li{
-        padding-left: 2rem;
-        text-align: left;
-    }
-    .am_sidebar:hover li a{
-        padding-left: 1rem;
-    }
-    .am_sidebar:hover .am_sidebar_logo img,
-    .am_sidebar:hover li a span:last-child{
-        display: inlie
-    }
+    }    
     
 }
 
@@ -327,6 +306,7 @@ tr td:last-child{
         grid-template-columns: 50% 50%;
     }
 }
+
 @media only screen and (max-width: 768px){
     .am_cards{
         grid-template-columns: repeat(2,1fr);
@@ -337,10 +317,135 @@ tr td:last-child{
     .am_search-warpper{
         display: none;
     }
+    .am_sidebar{
+        left: -100% !important;
+    }
+    header h2{
+        display: flex;
+        align-items:center;
+    }
+    header h2 label{
+        display: inline-block;
+        background-color: var(--main-color);
+        padding-right:0rem;
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center !important;
+    }
+    header h2 span{
+        text-align: center;
+        padding-right: 0rem;
+    }
+    header h2{
+        font-size: 1.1rem;
+    }
+    .am_main-content{
+        width: 100%;
+        margin-left: 0rem;
+    }
+    header{
+        width: 100% !important;
+        left: 0 !important;
+    }
+
+    #nav-toggle:checked + .am_sidebar{
+        left: 0 !important;
+        z-index: 100;
+        width: 345px;
+    }
+    #nav-toggle:checked + .am_sidebar{
+        left: 0 !important;
+        width: 345px;
+        z-index: 100;
+    }
+    #nav-toggle:checked + .am_sidebar,
+    #nav-toggle:checked + .am_sidebar li{
+        padding-left: 2rem;
+        text-align: left;
+    }
+    #nav-toggle:checked + .am_sidebar li a{
+        padding-left: 1rem;
+    }
+    #nav-toggle:checked + .am_sidebar .am_sidebar_logo img{
+        margin-top: 50px;
+    }
+    #nav-toggle:checked + .am_sidebar .am_sidebar_logo img,
+    #nav-toggle:checked + .am_sidebar li a span:last-child{
+        display: inline;
+    }
+    #nav-toggle:checked ~ .am_main-content{
+        margin-left: 0rem !important;
+    }
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:560px){
     .am_cards{
         grid-template-columns: 100%;
     }
 }
+
+/* packages */
+#takeingdata{
+    width: 70%;
+    margin-left: 400px;
+    margin-top: 100px;
+  }
+
+  table td,
+  table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  table tr:nth-child(even) {
+    background-color: #8caacf;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }
+  
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0468aa;
+    color: white;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin: auto;
+    resize: vertical;
+  }
+  #submit {
+    background-color: #2b619e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+  }
+#submit:hover {
+    background-color: #3973b6;
+  }
