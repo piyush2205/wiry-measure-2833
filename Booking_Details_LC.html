@@ -40,7 +40,7 @@
                     </div>
                     <hr>    
                     <div id="location">Location</div>
-                    <div id="location_name">Auroville</div><hr>
+                    <div id="location_name">vaijapur</div><hr>
                     <div id="highlight">Highlights</div>
                     <div id="meals">
                         <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425505_meals.png"
@@ -190,11 +190,11 @@
                 <div id="formdiv">
                     <h1>Enter Your Details and Proceed To Book</h1>
                     <form action="" id="bookform">
-                        <input type="email" placeholder="Email" id="email">
-                        <input type="text" placeholder="Full Name" id="name">
-                        <input type="number" placeholder="Contact Number" id="mobile">
-                        <input type="text" placeholder="Departure City" id="city">
-                        <select name="Number of people" id="people">
+                        <input type="email" placeholder="Email" id="email" required>
+                        <input type="text" placeholder="Full Name" id="name" required>
+                        <input type="number" placeholder="Contact Number" id="mobile" required>
+                        <input type="text" placeholder="Departure City" id="city" required>
+                        <select name="Number of people" id="people" required>
                             <option value="">Select Number of people</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -205,20 +205,20 @@
                             <option value="7">7</option>
                             <option value="8">8</option>
                         </select>
-                        <select name="Type of room" id="roomtype">
+                        <select name="Type of room" id="roomtype" required>
                             <option  value="">Select Type of Room</option>
                             <option value="Private Rooms x1 @13,400" id="optionA" >Private Rooms x1 @13,400</option>
                             <option value="Private Rooms x2 @26,800">Private Rooms x2 @26,800</option>
                             <option value="Private Rooms x1, Dorm Bed x1 @19,400" value="19,400">Private Rooms x1, Dorm Bed x1 @19,400</option>
                             <option value="Dorm Bed x2 @12,000" value="12,000">Dorm Bed x2 @12,000</option>
                         </select>
-                        <input type="date" id="checkdate">
+                        <input type="date" id="checkdate" required>
                         <div><input type="checkbox"><span>Send me updates for this booking on <img
                                     src="https://cdn1.tripoto.com/assets/2.9/img/logo/whatsapp-logo.png" alt="whatsapp"
                                     id="wp"></span></div>
                         <div id="amount">
                             <span>Amount:</span>
-                            <span id="price"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i> 6,000</span>
+                            <span id="Price"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i> 6,000</span>
                         </div>
                         <div id="tax">Taxes and discounts are calculated at checkout.</div>
                         <button id="next">Next <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
@@ -227,6 +227,7 @@
                 </div>
             </div>
         </div>
+        <br>
         <hr>
     </div>
 

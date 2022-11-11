@@ -1,7 +1,7 @@
 #cont{
     width: 100%;
-    height: 4000px;
-    border: 1px solid blue;
+    height: auto;
+    /* border: 1px solid blue; */
     margin-top: 0%;
 }
 #bigbox{
@@ -14,6 +14,7 @@
 #sb1{
     width: 780px;
     height: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     /* border: 1px solid black; */
 }
 #sb2{
@@ -30,6 +31,7 @@
     /* border: 1px solid red; */
     margin-top: 10px;
     display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 #image{
     width: 662px;
@@ -276,12 +278,13 @@
     height: 680px;
     display: block;
     border-radius: 10px;
-    border: 1px solid #b8b4c0;
+    /* border: 1px solid #b8b4c0; */
     margin: 10px 0 0 20px;
     padding: 0 10px 0 10px;
     max-width: 500px;
     position: sticky; 
     top: 2%;   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 #formdiv>h1{
     width: 300px;
