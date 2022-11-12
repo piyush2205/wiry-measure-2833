@@ -1000,7 +1000,19 @@
             "rating": "3"
         }
     ],
-    "user": [],
+    "user": [
+        {
+           "email":"piyush@gmail.com",
+           "name":"Piyush Kumar",
+           "mobile":"8232146546",
+           "city":"Andheri",
+           "people":"2",
+           "roomtype":"Private Rooms x2 @26,800",
+           "data":"2022-08-07",
+           "final_amount":"26,800",
+           "id":2223232323211 
+        }
+    ],
     "book_now":[],
     "booking_details":[],
     "Package_admin_added":[],
