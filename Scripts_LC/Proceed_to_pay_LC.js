@@ -10,15 +10,13 @@ let go_to_playstore = ()=>{
 
 
 
-
+//fetching data from url and appending user data here***********************************
 let url = "https://server-tripguru.onrender.com/api/user";
-
 window.onload = () => {
     Get_Data()
   };
 
   let Get_Data = async()=>{
-    // e.preventDefault();
     let res = await fetch(url)
     res = await res.json()
     // console.log(res);
@@ -26,10 +24,10 @@ window.onload = () => {
   }
 
   let append_Data = (data)=>{    
+    // console.log(data);
     for(i=0; i<data.length; i++){
-        console.log(data[i]);
-    // data.forEach(({email,name,mobile,city,people,roomtype,date,id}) => {
-        
+        // console.log(data[i]);
+    // data.forEach(({email,name,mobile,city,people,roomtype,date,id}) => { 
           document.getElementById("full_name").innerText = data[i].name;
           document.getElementById("email").innerText = data[i].email;
           document.getElementById("contact").innerText = data[i].mobile;
@@ -37,6 +35,26 @@ window.onload = () => {
           document.getElementById("check_date").innerText = data[i].date;
           document.getElementById("room_type").innerText = data[i].roomtype;
           document.getElementById("People").innerText = data[i].people
+          document.getElementById("amount").innerText = data[i].final_amount;
+          document.getElementById("amount0").innerText = data[i].final_amount;
     // });
 }
 }
+//************************************************************************************** */
+
+
+// no need right now************************** */
+// let pay = document.getElementById("processed");
+// let el = document.getElementById("payment");
+
+// pay.onclick = ()=>{
+//   // el.style.display = 'block';
+//   window.location.href = ""
+// }
+
+// let done = document.getElementById("done");
+// done.onclick = ()=>{
+//   alert("Payment Successful");
+//   window.location.href = "./index.html"
+// }
+///******************************************* */

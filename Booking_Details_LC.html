@@ -11,17 +11,58 @@
 
 <body>
     <!--*********************************** append navbar here *****************************-->
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
     <div id="navbar"></div>
     <div id="cont">
         <div id="bigbox">
             <!--****************** all fetch image data will be appended here ***********-->
             <div id="sb1">
                 <div id="imagediv">
-                    <div id="left"><button><i class="fa-solid fa-angles-left"></i></button></div>
-                    <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/2176903/Image/1662916018_lead_form_2_1.jpg"
-                        alt="auroville" id="image">
-                    <div id="right"><button><i class="fa-solid fa-angles-right"></i></button></div>
+                    <!-- <div id="left"><button><i class="fa-solid fa-angles-left"></i></button></div> -->
+                    <div class="mySlides fade">
+                        <img id="i1" src="" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="i2" src="" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="i3" src="" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="i4" src="" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="i5" src="" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img id="i6" src="" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                    <!-- <div id="right"><button><i class="fa-solid fa-angles-right"></i></button></div> -->
                 </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+
                 <div id="details">
                     <div id="title">
                         Explore Auroville Like a Local on a Bicycle As You Stay On a Rustic Farm | Beyond Community
@@ -38,9 +79,10 @@
                         <div id="prices"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i> 6,000 </div>
                         <span> /person</span>
                     </div>
-                    <hr>    
+                    <hr>
                     <div id="location">Location</div>
-                    <div id="location_name">Auroville</div><hr>
+                    <div id="location_name">vaijapur</div>
+                    <hr>
                     <div id="highlight">Highlights</div>
                     <div id="meals">
                         <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425505_meals.png"
@@ -58,9 +100,10 @@
                                 alt=""><span>Nature</span></span>
                         <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388084_wellness.png"
                                 alt=""><span>Wellness</span></span>
-                    </div><hr>
+                    </div>
+                    <hr>
                 </div>
-                
+
                 <div id="overview">
                     <h2>Overview</h2>
                     <p>Feel like stepping away from the urban cacophony, to unwind amidst nature? Embrace the gorgeous
@@ -116,14 +159,17 @@
                     <p><b>By Road: </b>Beyond Land can be reached by road from Chennai (149 kms) and Bangalore (359
                         kms.</p>
 
-                    <p><b>By Air:</b> The nearest airport is Pondicherry Airport in Pondicherry, 10 km away from the property.
+                    <p><b>By Air:</b> The nearest airport is Pondicherry Airport in Pondicherry, 10 km away from the
+                        property.
                         It takes about 22 minutes from the airport to reach the property.
                     </p>
-                    <p><b>By Train:</b> The nearest railway station is Pondicherry railway station, at a distance of 12 km from
+                    <p><b>By Train:</b> The nearest railway station is Pondicherry railway station, at a distance of 12
+                        km from
                         the property.</p>
-                    <p><b>By Bus:</b> Auroville bus stop (7.3 km) is in close proximity and is seventeen minutes away from the
+                    <p><b>By Bus:</b> Auroville bus stop (7.3 km) is in close proximity and is seventeen minutes away
+                        from the
                         property.</p>
-                    
+
                 </div>
                 <hr>
                 <div id="itinery">
@@ -132,7 +178,8 @@
                     <div class="panel">
                         <li>Check-in at around noon, and take a walk exploring this nature friendly retreat.</li>
                         <li>Post lunch, relax and settle into your glamping home tent or dorm.</li>
-                        <li>Attend an exciting session on Kalaripayattu and burn away the holiday calories (Timings: Mon-Fri 4pm & Sat-Sun 7am)</li>
+                        <li>Attend an exciting session on Kalaripayattu and burn away the holiday calories (Timings:
+                            Mon-Fri 4pm & Sat-Sun 7am)</li>
                         <li>Enjoy a hot and delicious dinner with a side of starry skies.</li>
                     </div>
 
@@ -140,8 +187,10 @@
                     <div class="panel">
                         <li>06:30 am: Wake up to the chirping of birds and volunteer at an organic farm</li>
                         <li>Enjoy a well-deserved hearty breakfast.</li>
-                        <li>It's time to explore Auroville like never before! Go cycling around the property and hit the rustic trails of Spirulina farm, Svaram sound garden and Matrimandir.</li>
-                        <li>Connect with fellow travelers, explore the town’s many cafes and of course, enjoy a delicious lunch at the property.</li>
+                        <li>It's time to explore Auroville like never before! Go cycling around the property and hit the
+                            rustic trails of Spirulina farm, Svaram sound garden and Matrimandir.</li>
+                        <li>Connect with fellow travelers, explore the town’s many cafes and of course, enjoy a
+                            delicious lunch at the property.</li>
                         <li>Stargaze from your tent, enjoy a musical night and feel the bliss.</li>
                     </div>
 
@@ -167,34 +216,33 @@
                 </div>
                 <hr>
                 <button class="accordion">Terms and Conditions</button>
-                    <div class="panel">
-                        <p>Last-minute change of plans? Let us know 72 hours ahead of the stay and pick another date as per your convenience within the next three months.<br><br>
+                <div class="panel">
+                    <p>Last-minute change of plans? Let us know 72 hours ahead of the stay and pick another date as per
+                        your convenience within the next three months.<br><br>
 
-                            In case an experience is canceled, the refund will be processed within 45 days.<br><br>
-                            
-                            Hosts alone are responsible for the experiences they provide. Tripoto assumes no liability and is only responsible for making the experiences and host's services available through the Tripoto platform.</p>
-                    </div>
+                        In case an experience is canceled, the refund will be processed within 45 days.<br><br>
+
+                        Hosts alone are responsible for the experiences they provide. Tripoto assumes no liability and
+                        is only responsible for making the experiences and host's services available through the Tripoto
+                        platform.</p>
+                </div>
 
                 <button class="accordion">Cancellation Policy</button>
-                    <div class="panel">
-                        <p>All bookings for Tripoto Mindful Retreats are non-refundable.</p>
-                    </div>
+                <div class="panel">
+                    <p>All bookings for Tripoto Mindful Retreats are non-refundable.</p>
+                </div>
             </div>
-
-
-
-
 
             <!--********************** create form for booking details ******************************* -->
             <div id="sb2">
                 <div id="formdiv">
                     <h1>Enter Your Details and Proceed To Book</h1>
                     <form action="" id="bookform">
-                        <input type="email" placeholder="Email" id="email">
-                        <input type="text" placeholder="Full Name" id="name">
-                        <input type="number" placeholder="Contact Number" id="mobile">
-                        <input type="text" placeholder="Departure City" id="city">
-                        <select name="Number of people" id="people">
+                        <input type="email" placeholder="Email" id="email" required>
+                        <input type="text" placeholder="Full Name" id="name" required>
+                        <input type="number" placeholder="Contact Number" id="mobile" required>
+                        <input type="text" placeholder="Departure City" id="city" required>
+                        <select name="Number of people" id="people" required>
                             <option value="">Select Number of people</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -205,20 +253,21 @@
                             <option value="7">7</option>
                             <option value="8">8</option>
                         </select>
-                        <select name="Type of room" id="roomtype">
-                            <option  value="">Select Type of Room</option>
-                            <option value="Private Rooms x1 @13,400" id="optionA" >Private Rooms x1 @13,400</option>
+                        <select name="Type of room" id="roomtype" required>
+                            <option value="">Select Type of Room</option>
+                            <option value="Private Rooms x1 @13,400" id="optionA">Private Rooms x1 @13,400</option>
                             <option value="Private Rooms x2 @26,800">Private Rooms x2 @26,800</option>
-                            <option value="Private Rooms x1, Dorm Bed x1 @19,400" value="19,400">Private Rooms x1, Dorm Bed x1 @19,400</option>
+                            <option value="Private Rooms x1, Dorm Bed x1 @19,400" value="19,400">Private Rooms x1, Dorm
+                                Bed x1 @19,400</option>
                             <option value="Dorm Bed x2 @12,000" value="12,000">Dorm Bed x2 @12,000</option>
                         </select>
-                        <input type="date" id="checkdate">
+                        <input type="date" id="checkdate" required>
                         <div><input type="checkbox"><span>Send me updates for this booking on <img
                                     src="https://cdn1.tripoto.com/assets/2.9/img/logo/whatsapp-logo.png" alt="whatsapp"
                                     id="wp"></span></div>
                         <div id="amount">
                             <span>Amount:</span>
-                            <span id="price"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i> 6,000</span>
+                            <span id="Price"><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i> 6,000</span>
                         </div>
                         <div id="tax">Taxes and discounts are calculated at checkout.</div>
                         <button id="next">Next <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
@@ -227,6 +276,7 @@
                 </div>
             </div>
         </div>
+        <br>
         <hr>
     </div>
 
@@ -234,7 +284,5 @@
     <div id="footer"></div>
 </body>
 <script src="./Scripts_LC/Booking_Details_LC.js"></script>
-<script src="https://kit.fontawesome.com/24c494a6b6.js"
-      crossorigin="anonymous"
-    ></script>
+<script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
 </html>
