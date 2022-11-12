@@ -1,21 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Package</title>
-    <link rel="stylesheet" href="package.css">
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#v_main{
+    width: 90%;
+    height: auto;
+    margin: 10px 5%;
+}
+#v_main h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: #333333;
+}
+#v_main p{
+    line-height:30px;
+    color: #333333;
+}
+
+#v_mindful,#v_trending, #v_international{
+    display: flex;
+    width: 100%;
+    height: 440px;
+    margin: 10px 0px;
+    overflow-x: scroll;
+    gap: 10px;
+}
+#v_mindful div,#v_trending div, #v_international div{
+    width: 375px;
+    height: auto;
+}
+.p_card_d img{
+    width: 100%;
+    height: auto;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile p{
+    font-size: 13px;
+}
+.p_card_d a{
+    text-decoration: none;
+    color: #359391;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 5px 0px 20px 0px;
+    cursor: pointer;
+}
+
+.v_ll{
+    display: flex;
+    justify-content: space-between;
+}
+.v_ll>button{
+    width: 60px;
+    height: auto;
+    background-color: #359391;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    padding: 5px 0px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+.v_ll i, .v_ll div:nth-child(1){
+    color: #359391;
+}
+.v_ll i{
+    margin-right: 5px;
+}
+.v_ll div:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+}
+#v_mindful h4,#v_trending h4, #v_international h4{
+    line-height: 22px;
+    margin: 6px 0px;
+    color: #333333;
+}
+.v_person{
+    font-size: 15px;
+    font-weight: 100;
+    color: #6b6b6b;
+}
+.vp{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.v_book_now{
+    color: #359391;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #359391;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+hr{
+    border-color:#ffffff ;
+    margin-bottom: 10px;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <div id="v_main">
         <h2>Tripoto's Mindful Retreats</h2>
-        <div id="v_mindful"></div>
+        <div id="v_mindful">
+        </div>
+
+            
 
         <h2>Trending Domestic Packages</h2>
-        <div id="v_trending"></div>
+        <div id="v_trending">
+            
+        </div>
 
         <h2>Trending International Packages</h2>
         <div id="v_international"></div>
@@ -55,17 +175,151 @@
             <p>Booking holidays on Tripoto is as easy as it gets. Pick from hundreds of packages. We will then connect you
             with your choices of travel providers via email and/or phone. Tripoto partners with leading travel companies
             in India, like MakeMyTrip, Thomas Cook, SOTC, Yatra, to name a few, to help you plan the perfect vacation.
-            Here is the step-by-step guide to booking domestic or international packages on Tripoto.
+            Here is the step-by-step guide to booking domestic or international packages on Tripoto.</p>
+<p>
+            Step 1: Click on the 'Book Holidays' button on the top right corner of any page on Tripoto.</p>
 
-            Step 1: Click on the 'Book Holidays' button on the top right corner of any page on Tripoto.
+            <p>Step 2: You will be taken to a page with different categories of packages.</p>
 
-            Step 2: You will be taken to a page with different categories of packages.
-
-            Step 3: Click on any package to submit your requirements. We will attend to your query and put you in touch
+            <p>Step 3: Click on any package to submit your requirements. We will attend to your query and put you in touch
             with a representative from our travel partners within 48 hours.</p>
         </div>
     </div>
 </body>
-<script src="./package.js"></script>
+<script>
+    let api = 'https://server-tripguru.onrender.com/api/mindful';
+let tr = 'https://server-tripguru.onrender.com/api/domestic';
+let int = 'https://server-tripguru.onrender.com/api/international';
 
+
+let Package = async()=>{
+    let res = await fetch(api);
+    res = await res.json();
+    renderDom(res);
+    // console.log(res[0].id);
+
+    let tt = await fetch(tr);
+    tt = await tt.json();
+    trending(tt);
+
+    let intt = await fetch(int);
+    intt = await intt.json();
+    international(intt);
+};
+Package();
+
+
+let item = ({descTitle,banner,cirDesc,cirImage,price,days,location,id})=>{
+    let div = document.createElement("div");
+    div.setAttribute("class","p_card_d");
+
+    let img = document.createElement("img");
+    img.src=banner;
+
+    let a = document.createElement("a");
+    a.innerText="PACKAGE";
+    a.onclick =()=>{
+        window.location.replace("package.html");
+    }
+
+    let h4 = document.createElement("h4");
+    h4.innerText=descTitle;
+
+    let vll = document.createElement("div");
+    vll.setAttribute("class","v_ll");
+
+    let vllc = document.createElement("div");
+    vllc.innerHTML = `<i class="fa fa-map-marker"></i> ${location}`
+    let d_btn = document.createElement("button");
+    d_btn.innerText=days;
+
+    vll.append(vllc,d_btn);
+
+    let vp = document.createElement("div");
+    vp.setAttribute("class", "vp");
+    let h3 = document.createElement("h3");
+    h3.innerHTML=`₹${price} <span class="v_person">/ person</span>`
+
+    let v_book_now = document.createElement("button");
+    v_book_now.innerText ="Book Now";
+    v_book_now.setAttribute("class","v_book_now");
+    v_book_now.setAttribute("id","v_book");
+    v_book_now.onclick=()=>{
+        book_package(id);
+    }
+
+    vp.append(h3,v_book_now);
+
+    let hr = document.createElement("hr");
+
+    let pro = document.createElement("div");
+    pro.setAttribute("class","profile");
+    
+    let pro_img = document.createElement("img");
+    pro_img.src=cirImage;
+
+    let pro_p = document.createElement("p");
+    pro_p.innerText=cirDesc;
+
+    pro.append(pro_img,pro_p)
+
+    div.append(img,a,h4,vll,vp,hr,pro)
+    return div;
+}
+
+//<i class="fa fa-check fa-stack-1x color-white"></i>
+
+let cont = document.getElementById("v_mindful");
+    let cont2 = document.getElementById("v_trending");
+    let cont3 = document.getElementById("v_international");
+
+    let renderDom =(data) =>{
+        cont.innerHTML=null;
+        data.forEach((el,id) => {
+            let card = item(el,id);
+            cont.append(card);
+        });
+    };
+
+    let trending =(data) =>{
+        cont2.innerHTML=null;
+        data.forEach((el) => {
+            let card = item(el);
+            cont2.append(card);
+        });
+    };
+
+    let international =(data) =>{
+        cont3.innerHTML=null;
+        data.forEach((el) => {
+            let card = item(el);
+            cont3.append(card);
+        });
+    };
+
+
+    // book now 
+
+    // api/id
+    // tr/id
+    // int/id
+    // key  = book_now;
+
+let book_package = async(id)=>{
+    let data = await fetch(`${api}/${id}`);
+    data = await data.json();
+    let book_now= {
+        data,
+    }
+    await fetch(`https://server-tripguru.onrender.com/api/book_now`,{
+        method: "POST",
+        body: JSON.stringify(book_now),
+        headers:{
+            "Content-Type": "application/json",
+        },
+    });
+    localStorage.setItem("book_package",JSON.stringify(book_now));
+    window.location.replace("./Booking_Details_LC.html");
+}
+</script>
 </html>
