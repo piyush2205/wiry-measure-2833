@@ -1002,5 +1002,8 @@
     ],
     "user": [],
     "book_now":[],
-    "booking_details":[]
+    "booking_details":[],
+    "Package_admin_added":[],
+    "gift_card":[],
+    "extra":[]
 }
