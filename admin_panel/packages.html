@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="./style/admin.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 </head>
-
 <body>
     <input type="checkbox" name="" id="nav-toggle">
     <div class="am_sidebar">
@@ -48,9 +47,9 @@
             </ul>
         </div>
     </div>
+<div class="am_main-content">
     <header id="navbar">
-        <!-- appended my navbar -->
-        <h2>
+        <h2 style="margin-top: 30px;">
             <label for="nav-toggle">
                 <span class="las la-bars"></span>
             </label>
@@ -69,64 +68,59 @@
                 <img src="https://github.com/blackcode1996.png" width="50px" height="50px" alt="">
                 <div>
                     <h4>Aakash Mukherjee</h4>
-                    <small>Super Admin</small>
+                    <small>Admin</small>
                 </div>
             </div>
     </header>
 
-    <body id="takeingdata" style="margin-top: 200px;">
-        <h1 style="text-align: center;font-size: 50px;text-transform: uppercase;font-family: monospace;color:var(--main)">Packages Records</h1>
+    <body id="takeingdata" style="margin-top: 110px;text-align: center;">
+        <h1 style="text-align: center;font-size: 30px;text-transform: uppercase;font-family: monospace;color:var(--main);padding: 10px;">Packages Records</h1>
         <div style=" display: flex;justify-content: space-evenly;">
             <!-- *****using form here ****  -->
-        <form id="form" style="margin-top: 50px;margin: auto;width: 30%;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;padding: 35px;">
-                <label style="font-size: 20px;padding: 1px;" for="">Packages</label>
+            <form id="form" style="margin-top: 10px;width: 30%;box-shadow: rgba(3, 102, 214, 0.8) 0px 0px 0px 3px;padding:30px;border-radius: 20px;height: fit-content;">
+                <label style="font-size: 15px;padding: .5px" for="">Packages</label>
                 <br/>
-                <select>
+                <select id="pack">
                     <option value="" disabled>Select Packages</option>
-                    <option value="">Tripoto's Mindful Retreats</option>
-                    <option value="">Domestic Packages</option>
-                    <option value="">International Packages</option>
+                    <option value="Tripoto's Mindful Retreats">Tripoto's Mindful Retreats</option>
+                    <option value="Domestic Packages">Domestic Packages</option>
+                    <option value="International Packages">International Packages</option>
                 </select>
                 <br/>
                 <br/>
-                <label style="font-size: 20px;padding: 1px;" for="">Price</label>
+                <label style="font-size: 15px;padding: .5px;" for="">Price</label>
                 <br/>
                 <input id="price" type="number" placeholder="Enter Price" />
                 <br/>
                 <br/>
-                <label style="font-size: 20px;padding: 1px;" for="">Category</label>
+                <label style="font-size: 15px;padding: .5px;" for="">Category</label>
                 <br/>
                 <select id="category">
                     <option value="" disabled>Select Category</option>
-                    <option value="Dermatologist">Family</option>
-                    <option value="ENT">Couple</option>
-                    <option value="Dentist">Budget</option>
+                    <option value="Family">Family</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Budget">Budget</option>
                 </select>
                 <br/>
                 <br/>
-                <label style="font-size: 20px;padding: 1px;" for="">Location</label>
+                <label style="font-size: 15px;padding: .5px;" for="">Location</label>
                 <br/>
                 <input id="location" type="text" placeholder="Enter Location"/>
                 <br/>
                 <br/>
-                <label style="font-size: 20px;padding: 1px;" for="">Duration</label>
+                <label style="font-size: 15px;padding: .5px;" for="">Duration</label>
                 <br/>
                 <input type="text" id="duration" placeholder="Enter Duration"/>
                 <br/>
                 <br/>
-                <label style="font-size: 20px;padding: 1px;" for="files">Enter One or Multiple Images</label>
+                <label style="font-size: 15px;padding: .5px;" for="files">Enter Banner Image</label>
                 <br/>
-                <input id="image" type="file" multiple="multiple" placeholder="Enter Images" name="files"/>
+                <input id="image" type="url" placeholder="Enter Image url"/>
                 <br/>
                 <br/>
                 <button id="submit">Submit</button>
             </form>
-            <table style="font-family: Arial, Helvetica, sans-serif;
-          border-collapse: collapse;
-          width: 60%;
-          margin: auto;
-          margin-top: 50px;
-          text-align: center;">
+            <table style="font-family: Arial, Helvetica, sans-serif;border-collapse: collapse;width: 60%;margin: auto;text-align:center;">
                 <thead>
                     <tr>
                         <td>Packages</td>
@@ -135,15 +129,16 @@
                         <td>Image</td>
                         <td>Duration</td>
                         <td>Category</td>
-                        <td>Status</td>
+                        <td>Delete</td>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="container">
                     <!-- ******* Appended my output here ********* -->
                 </tbody>
             </table>
         </div>
     </body>
+</div>
     <script src="./script/packages.js"></script>
 </body>
 

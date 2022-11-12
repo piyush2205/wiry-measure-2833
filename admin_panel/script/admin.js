@@ -1,11 +1,13 @@
 let api=`https://server-tripguru.onrender.com/api/package`
 
 
+let numofpack=document.getElementById('numofpack')//to change number of packages
 //fetching data from server
 async function getdata(){
     try{
         let res=await fetch(api)
         let data=await res.json()
+        numofpack.innerText=data.length;
         renderDom(data);
     }catch(error){
         console.log(error);
@@ -71,5 +73,65 @@ let renderDom=(data)=>{
         cont.append(card);
     })
 }
+
+
+//search pacakages
+//in this fashion
+{/* <li>
+        <h4>Tripoto's Mindful Retreats</h4>
+        <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg" style="height: 50px;">
+    </li>
+<hr></hr> */}
+
+
+
+async function searchpacakages(){
+
+    let query=document.getElementById('query').value;
+
+    response=await fetch(`${api}?location_like=${query}`)
+    let data=await response.json();
+
+
+    let main=document.getElementById('show_search_result')
+    main.innerHTML=null;
+
+    
+    
+    if(query){
+        main.style.display="block";
+        data.forEach(el=>{
+
+            let ul=document.createElement('ul')
+
+            let li=document.createElement('li')
+    
+            let h4=document.createElement('h4')
+            h4.innerText=el.descTitle;
+    
+            let img=document.createElement('img')
+            img.style.height="50px";
+            img.src=el.banner;
+    
+            let hr=document.createElement('hr')
+    
+    
+            li.append(h4,img,hr)
+            ul.append(li)
+            main.append(ul)
+            
+        })
+    }
+   
+}
+    // }else if(query==""){
+    //     main.style.display="none"
+    // }
+
+        
+    
+      
+
+    
 
 

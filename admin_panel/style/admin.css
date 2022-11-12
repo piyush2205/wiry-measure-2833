@@ -111,6 +111,8 @@ header label span{
     padding-right: 1 rem;
 }
 .am_search-warpper{
+    margin-top: 20px;
+    width: 500px;
     border: 1px solid blue;
     border-radius: 30px;
     height: 60px;
@@ -192,8 +194,8 @@ main{
     padding: 2rem;
 }
 .card_img{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
 }
 .card_header{
     display: flex;
@@ -391,9 +393,8 @@ tr td:last-child{
 
 /* packages */
 #takeingdata{
-    width: 70%;
-    margin-left: 400px;
-    margin-top: 100px;
+    width: 100%;
+    margin-left: 20px;
   }
 
   table td,
@@ -424,10 +425,11 @@ tr td:last-child{
   }
   input[type="text"],
   input[type="number"],
+  input[type="url"],
   select,
   textarea {
     width: 100%;
-    padding: 15px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -439,13 +441,55 @@ tr td:last-child{
   #submit {
     background-color: #2b619e;
     color: white;
-    padding: 12px 20px;
+    padding: 10px 15px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
   }
 #submit:hover {
     background-color: #3973b6;
+}
+
+
+/* scrollbar style */
+*::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+  *::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+
+  /* search */
+  #show_search_result>ul{
+  background-color: var(--main-color);
+  font-size: 20px;color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  }
+  #show_search_result{
+    margin-top: 80px;
+    width: 500px;
+    position: absolute;
+    margin-left: 190px;
+    border-radius: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+    display: none;
   }
