@@ -250,20 +250,20 @@ tr td:last-child{
     align-items: center;
     padding: 1rem;
 }
-.info{
+#info{
     display: flex;
     align-items: center;   
 }
-.info img{
+#info img{
     border-radius: 50%;
     margin-right: 1rem;
 }
-.info h4{
+#info h4{
     font-size: .8rem;
     font-weight: 700;
     color: #222;
 }
-.info small{
+#info small{
     font-weight: 600;
     color: var(--text-grey);
 }

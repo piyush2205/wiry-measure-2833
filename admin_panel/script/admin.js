@@ -1,14 +1,23 @@
 let api=`https://server-tripguru.onrender.com/api/package`
+let custdata=`https://server-tripguru.onrender.com/api/user`
 
 
 let numofpack=document.getElementById('numofpack')//to change number of packages
 //fetching data from server
+let numofcust=document.getElementById('numofcust')//to change number of customers
+//fetching data from server
+let income=document.getElementById('income')
+
 async function getdata(){
     try{
-        let res=await fetch(api)
-        let data=await res.json()
-        numofpack.innerText=data.length;
-        renderDom(data);
+        let res1=await fetch(api)
+        let res2=await fetch(custdata)
+        let data1=await res1.json()
+        let data2=await res2.json()
+        numofpack.innerText=data1.length;
+        numofcust.innerText=data2.length;
+        renderDom(data1);
+        renderDom2(data2);
     }catch(error){
         console.log(error);
     }
@@ -64,6 +73,45 @@ let pacakagedata=({id,cirDesc,price,location,banner,days})=>{
 
 }
 
+
+//append customer data in this way
+{/* <div id="info">
+        <img src="https://www.pngitem.com/pimgs/m/62-625606_computer-icons-suit-image-avatar-clip-art-customer.png" alt="" height="40px" width="40px">
+        <div>
+            <h4>Chunnu</h4>
+            <small>Varanasi</small>
+        </div>
+    </div>
+ */}
+
+let customerdata=({name,city,final_amount})=>{
+
+    income.innerText=`₹${final_amount}`
+
+    let div=document.createElement('div')
+    div.setAttribute('id','info')
+
+    let image=document.createElement('img')
+    image.src='https://www.pngitem.com/pimgs/m/62-625606_computer-icons-suit-image-avatar-clip-art-customer.png'
+    image.style.height="40px";
+    image.style.width="40px";
+
+    let div2=document.createElement('div')
+
+    let h4=document.createElement("h4");
+    h4.innerText=name;
+
+    let small=document.createElement('small');
+    small.innerText=city;
+
+    div2.append(h4,small)
+    div.append(image,div2)
+
+    return div;
+
+
+}
+
 //get the container and append all the data
 let renderDom=(data)=>{
     let cont=document.getElementById('container')
@@ -73,6 +121,27 @@ let renderDom=(data)=>{
         cont.append(card);
     })
 }
+//get the conatiner2 and append all the data for customer
+
+let renderDom2=(data)=>{
+    let cont2=document.getElementById('container2')
+    cont2.innerHTML=null;
+    data.forEach((el)=>{
+        let card2=customerdata(el);
+        cont2.append(card2)
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 //search pacakages
@@ -82,6 +151,8 @@ let renderDom=(data)=>{
         <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660666126_image_covera.jpg" style="height: 50px;">
     </li>
 <hr></hr> */}
+
+
 
 
 
@@ -121,6 +192,8 @@ async function searchpacakages(){
             main.append(ul)
             
         })
+    }else{
+        main.style.display="none"
     }
    
 }
@@ -128,10 +201,16 @@ async function searchpacakages(){
     //     main.style.display="none"
     // }
 
-        
+   
+ 
     
+function openpackages(){
+    window.location.href="./admin_packages.html"
+}
       
-
+function opencustomers(){
+    window.location.href="./customers.html"
+}
     
 
 

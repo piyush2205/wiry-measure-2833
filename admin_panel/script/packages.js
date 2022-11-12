@@ -1,3 +1,4 @@
+let also_api_send=`https://server-tripguru.onrender.com/api/Package_admin_added`
 let api=`https://server-tripguru.onrender.com/api/package`
 
 document.getElementById('submit').addEventListener('click',async function getformdata(event){
@@ -22,6 +23,14 @@ document.getElementById('submit').addEventListener('click',async function getfor
                 "content-Type":"application/json",
             }
         })
+        await fetch(also_api_send,{
+            method:"POST",
+            body:JSON.stringify(package),
+            headers:{
+                "content-Type":"application/json",
+            }
+        })
+        
 
     cirDesc.value=null;
     price.value=null;
@@ -30,18 +39,37 @@ document.getElementById('submit').addEventListener('click',async function getfor
     days.value=null;
     banner.value=null;
 
+    window.location.reload();
+
     
 })
 
+
+let id_to_dlt;
 // to show data in table from database
 async function getdata(){
-    let res=await fetch(api)
-    let data=await res.json()
-    renderDom(data);
+    let res1=await fetch(also_api_send)
+    let data1=await res1.json()
+
+    let res2=await fetch(api)
+    let data2=await res2.json()
+
+    data2.forEach((el)=>{
+        id_to_dlt=el.id
+    })
+    console.log(id_to_dlt)
+    // console.log(data)
+    renderDom(data1);
+    
 }
 getdata();
 
-let pacakagedata=({id,cirDesc,price,location,banner,days})=>{
+
+
+
+
+let pacakagedata=({id,cirDesc,price,location,banner,days,id_to_dlt})=>{
+
     let tr=document.createElement('tr');
     tr.setAttribute('class','card_row');
 
@@ -66,6 +94,7 @@ let pacakagedata=({id,cirDesc,price,location,banner,days})=>{
     dlt.style.fontWeight="bold";
     dlt.onclick=()=>{
         deletepackage(id);
+        delete_another_package(id_to_dlt);
     }
     
     
@@ -91,10 +120,21 @@ let renderDom=(data)=>{
 
 //delete function
 let deletepackage=async(id)=>{
+    console.log(id)
+    await fetch(`${also_api_send}/${id}`,{
+        method:"DELETE",
+    });
+    
+    getdata();
+
+    
+}
+
+let delete_another_package_function=async(id)=>{
+    console.log(id)
     await fetch(`${api}/${id}`,{
         method:"DELETE",
     });
-    getdata();
 }
 
 
