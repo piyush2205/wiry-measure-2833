@@ -16,8 +16,8 @@ $('.main-carousel').flickity({
     
   	//variables
     $f = 1000,  // fade in/out speed
-    $s = 800,  // slide transition speed (for sliding carousel)
-    $d = 3000;  // duration per slide
+    $s = 700,  // slide transition speed (for sliding carousel)
+    $d = 2000;  // duration per slide
     
     $n = $('.slide').length; //number of slides
     $w = $('.slide').width(); // slide width
