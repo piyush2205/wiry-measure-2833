@@ -1,0 +1,374 @@
+* {
+    font-family: circularairpro-bold, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+#ps_box {
+    /* border: 1px solid red; */
+    margin-top: 180px;
+    /* width: 1171px; */
+}
+
+#ps_4_option {
+    /* margin-top: 00px; */
+    /* border: 1px solid black; */
+    display: grid;
+    width: 1160px;
+    margin: auto;
+    position: relative;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#ps_4_option div :hover {
+    cursor: pointer;
+    /* border: 1px solid green; */
+}
+
+#ps_4_option div img {
+    width: 100%;
+    
+}
+/* .................................................... */
+#_spotlight {
+    /* border: 2px solid brown; */
+    margin-top: 50px;
+}
+.swiper-navBtn{
+
+
+margin-left:-10px;
+}
+
+#ps_spotlight {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+#ps_spotlight div :hover{
+    cursor: pointer;
+    /* border: 1px solid skyblue; */
+}
+
+#ps_spotlight div img {
+    width: 259px;
+    height: 172px;
+    border-radius: 5px;
+}
+
+#ps_spotlight div div:nth-child(3) {
+    /* border: 1px solid darkmagenta; */
+    height: 77;
+    width: 259;
+    margin-top: 10px;
+    font-size: 18px;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+#ps_spotlight div div:nth-child(2) {
+    color: #f63;
+    margin-top: 5px;
+    font-size: 12px;
+}
+/* ....................................................... */
+.slide_img_ps {
+   /* / border: 1px solid darkblue; */
+    width: 1160px;
+    margin-left: 180px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+#slideshow_ps :hover{
+    cursor: pointer; 
+
+}
+/* ................................................ */
+#slideshow_ps_2 :hover{
+    cursor: pointer; 
+
+}
+
+#slideshow_ps_2 img {
+    width: 1160px;
+    margin-left: 180px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+/* ............................................................... */
+#_placevisit_ps {
+    /* border: 2px solid brown; */
+    margin-top: 50px;
+}
+
+#ps_placevisit {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+#ps_placevisit div img {
+
+    width: 259px;
+    height: 172px;
+    border-radius: 5px;
+}
+
+#ps_placevisit div :hover{
+    cursor: pointer;
+}
+
+#ps_placevisit div div:nth-child(3) {
+    /* border: 1px solid darkmagenta; */
+    /* height: 77; */
+    width: 259;
+    margin-top: 10px;
+
+    /* font-size: 18px; */
+    /* word-wrap: break-word; */
+    /* line-height: 1.5; */
+}
+
+#ps_placevisit div div:nth-child(3) a {
+    /* border: 1px solid darkmagenta; */
+    /* height: 77; */
+    color: #73bce7;
+
+    font-size: 16px;
+    /* word-wrap: break-word; */
+    /* line-height: 1.5; */
+}
+
+#ps_placevisit div div:nth-child(2) {
+    /* color: #F63; */
+    margin-top: 5px;
+    font-size: 18px;
+}
+/* ............................................... */
+#ps_spotlight_rajsthan {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+#ps_spotlight_rajsthan div img {
+    width: 259px;
+    height: 172px;
+    border-radius: 5px;
+}
+#ps_spotlight_rajsthan div:hover {
+   cursor: pointer;
+}
+
+
+#ps_spotlight_rajsthan div div:nth-child(2) {
+    /* border: 1px solid darkmagenta; */
+    height: 77;
+    width: 259;
+    margin-top: 10px;
+    font-size: 18px;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+/* ...................................................... */
+#results_ps {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+/* .............................................................. */
+.book_tab {
+    /* border:  1px solid black; */
+    width: 360px;
+}
+
+
+.img_ps {
+    /* border:  1px solid black; */
+    width: 355px;
+    height: 186px;
+    border-radius: 5px;
+}
+.img_ps:hover {
+    /* border:  1px solid black; */
+    cursor: pointer;
+}
+
+
+.book_tab div:nth-child(4) {
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+    display: flex;
+}
+.book_tab div:nth-child(4):hover {
+    /* border:  1px solid black; */
+    cursor: pointer;
+}
+.book_tab div:nth-child(4) img {
+    /* border: 1px solid blue; */
+
+    width: 3.5%;
+}
+
+.book_tab div:nth-child(5) {
+    /* border: 1px solid brown; */
+    display: flex;
+    margin-top: 20px;
+}
+
+.book_tab div:nth-child(5):hover {
+    /* border:  1px solid black; */
+    cursor: pointer;
+}
+
+.book_tab div:nth-child(5) button {
+    margin-left: 140px;
+    color: #359391;
+    border: 1px solid #359391;
+    border-radius: 5px;
+    background-color: white;
+    height: 30px;
+    width: 86px;
+}
+
+.book_tab div:nth-child(6) {
+    /* border: 1px solid violet; */
+    border-top: 1px solid #ddd;
+    display: flex;
+    margin-top: 20px;
+}
+
+.book_tab div:nth-child(6):hover {
+    /* border: 1px solid violet; */
+cursor: pointer;
+}
+
+
+.book_tab div:nth-child(6) img {
+    width: 10%;
+    border-radius: 30px;
+    margin-top: 5px;
+}
+
+#spotlight_creators_ps {
+    /* border: 1px solid red; */
+    margin-top: 50px;
+}
+
+.div1_ps_creator {
+   /*  border: 1px solid teal; */
+    width: 1140px;
+    margin: auto;
+}
+
+.div1_ps_creator p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #333333; 
+}
+
+#img_creators_ps {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+#img_creators_ps img {
+    width: 201px;
+    height: 254px;
+    border-radius: 5px;
+}
+
+#img_creators_ps img:hover {
+    cursor: pointer;
+
+}
+
+#img_creators_ps_raj {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1160px;
+    margin: auto;
+    margin-top: 10px;
+    gap: 20px;
+}
+
+#img_creators_ps_raj img {
+    width: 259px;
+    height: 320px;
+    border-radius: 5px;
+}
+
+#img_creators_ps_raj img:hover {
+    cursor: pointer;
+}
+
+/* ............................................................ */
+#ps_footer_1{
+    display: flex;
+    /* border: 1px solid blue; */
+    margin-top: 50px;
+    border-top: 1px solid #DCDFE0;
+    border-bottom: 1px solid #DCDFE0;
+    padding-bottom: 60px
+
+}
+
+.footer_div1_ps{
+    margin-top: 50px;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    width: 50%;
+}
+.footer_div1_ps  img{
+    width: 50%;
+}
+
+.footer_div2_ps{
+    /* border: 1px solid blue; */
+    height: auto;
+    width: 286px;
+    margin: 50px 50px;
+    display: block;
+}
+
+.footer_div2_ps div{
+    /* font-size: 12px; */
+    /* border: 1px solid red; */
+    margin-top: 8px;
+    width: 200px;
+}
+
+.footer_div2_ps div a{
+    font-size: 12px;
+    /* border: 1px solid red; */
+    margin-top: 8px;
+    color: #4b4a4a; ;
+    /* width: 200px; */
+}
+
+.book_now_ps:hover{
+cursor: pointer;
+}
