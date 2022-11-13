@@ -10,11 +10,20 @@
     <link rel="stylesheet" href="./ps_style/ps_navbar.css">
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8.4.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="./popup.css">
 
 
 </head>
 
 <body>
+   
+    <!-- signup code end here  -->
+    <div id="ps_popup"></div>
+    <!-- login code start here  -->
+
+    <!-- login code end here  -->
     <div id="ps_container" style="border: 1px sold red;">
         <img id="banner_img" src="https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg" alt="">
         <div id="navbar_ps">
@@ -371,15 +380,20 @@
     </div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script type="module">
-    import navbar from "./components/navbar.js"
-    let nav = document.getElementById("navbar_ps")
-    nav.innerHTML = navbar()
+<script type="module" src="./signuplogin.js">
+  
+</script>
+<script type="module" src="./headerfooter.js"></script>
+<script >
+    
 
-    import footer from "./components/footer.js"
-    let foot = document.getElementById("ps_footer")
-    foot.innerHTML = footer()
+    
 
+    // let sigin=document.getElementById("Siginin_ps")
+    //             sigin.onclick=()=>{
+    //                 document.getElementById("v_signup_main").style="block";
+    //             }
+   
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
         spaceBetween: 10,
@@ -528,5 +542,16 @@
 
 
 </script>
+<script> 
+ let sigin_vc=document.getElementById("Siginin_ps")
+    sigin_vc.addEventListener("click",function(){
+        sigin_ps()
+    })
 
+
+    let sigin_ps=()=>{
+        document.getElementById("v_login_main").style.display="block";
+    }
+    
+        </script>
 </html>

@@ -1,0 +1,240 @@
+ /* sign up code start here */
+
+ *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#v_signup_main{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.133);
+    padding-top: 20px;
+    z-index: 99;
+    display: none;
+    /* position:absolute; */
+
+}
+#v_signup_main div p{
+    text-align: center;
+}
+#v_signup_main div{
+    width: 320px;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    z-index: 999;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+}
+button{
+    cursor: pointer;
+}
+#s_status{
+    width: 90%;
+height: 35px;
+margin: 5px 5%;
+color: rgb(13, 162, 82);
+outline: none;
+border: none;
+display: none;
+border-radius: 5px;
+font-size: 14px;
+}
+#login_fb{
+    width: 90%;
+    height: 35px;
+    margin: 20px 5% 10px 5%;
+    background-color: #4A65A0;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#login_google{
+    width: 90%;
+    height: 35px;
+    margin: 5px 5%;
+    background-color: #FFFFFF;
+    color: #959494;
+    outline: none;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#v_signup_main div #s_email, #s_password,#s_name,#v_num,#s_number{
+    width: 90%;
+    height: 35px;
+    margin: 5px 5%;
+    border: 1px solid #D6D6D6;
+    outline: none;
+    border-radius: 5px;
+}
+#s_email[type=email],#s_password[type=password],#s_name[type=text],#s_number[type=number]{
+    padding:10px;
+}
+#v_sign_up{
+
+    width: 90%;
+    height: 40px;
+    margin: 10px 5%;
+    background-color: #F27669;
+    color: whitesmoke;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+#s_remember{
+    margin: 10px 5px 10px 5%;
+    color: #7C7C7C;
+}
+#s_rr{
+    color: #4E4E4E;
+    font-size: 14px;
+}
+#aa{
+    color: #4E4E4E;
+    margin-left: 20%;
+    font-size: 14px;
+    text-align: center;
+}
+#aa a{
+    text-decoration: none;
+    color: #1C70A2;
+}
+.fa-google {
+background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+margin-right: 10px;
+font-size: 15px;
+}
+/* sign up code end here  */
+
+/* login code start here  */
+#v_login_main{
+width: 100%;
+height: auto;
+padding-bottom: 20px;
+background-color: rgba(0, 0, 0, 0.133);
+padding-top: 20px;
+z-index: 99;
+/* position:absolute; */
+    /* display: none; */
+ 
+}
+#v_login_main div p{
+text-align: center;
+}
+#v_login_main div{
+width: 320px;
+height: auto;
+margin: auto;
+z-index: 999;
+border-radius: 10px;
+background-color: white;
+padding-bottom: 20px;
+padding-top: 10px;
+}
+button{
+cursor: pointer;
+}
+#v_status{
+width: 90%;
+height: 35px;
+margin: 5px 5%;
+color: rgb(13, 162, 82);
+outline: none;
+border: none;
+display: none;
+border-radius: 5px;
+font-size: 14px;
+}
+#login_fb{
+width: 90%;
+height: 35px;
+margin: 20px 5% 10px 5%;
+background-color: #4A65A0;
+color: whitesmoke;
+outline: none;
+border: none;
+border-radius: 5px;
+font-size: 14px;
+}
+#login_google{
+width: 90%;
+height: 35px;
+margin: 5px 5%;
+background-color: #FFFFFF;
+color: #959494;
+outline: none;
+font-size: 14px;
+border: none;
+border-radius: 5px;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+#v_login_main div #email, #password{
+width: 90%;
+height: 35px;
+margin: 5px 5%;
+border: 1px solid #D6D6D6;
+outline: none;
+border-radius: 5px;
+}
+#email[type=email],[type=password]{
+padding:10px;
+}
+#v_login{
+width: 90%;
+height: 40px;
+margin: 10px 5%;
+background-color: #F27669;
+color: whitesmoke;
+outline: none;
+border: none;
+border-radius: 5px;
+font-size: 14px;
+}
+#remember{
+margin: 10px 5px 10px 5%;
+color: #7C7C7C;
+}
+#forg{
+margin-left:15%;
+text-decoration: none;
+color: #1C70A2;
+}
+#rr{
+color: #4E4E4E;
+font-size: 14px;
+}
+#aa{
+color: #4E4E4E;
+margin-left: 20%;
+font-size: 14px;
+text-align: center;
+}
+#aa a{
+text-decoration: none;
+color: #1C70A2;
+}
+.fa-google {
+background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+margin-right: 10px;
+font-size: 15px;
+}
+/* login code end here  */

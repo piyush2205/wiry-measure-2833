@@ -3,7 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: circularairpro-bold,Helvetica,Arial,sans-serif;
-    font-weight: 700;
+    /*  */
     list-style: none;
     text-decoration: none;
 }
@@ -16,6 +16,7 @@
     width: 100%;
 }
 #ps_navbar{
+    font-weight: 700;
     /* border: 1px solid black; */
     display: flex;
     justify-content:space-between;

@@ -161,6 +161,7 @@
     position: sticky; 
     top: 2%;   
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
 }
 #formdiv>h1{
     width: 300px;
@@ -174,23 +175,24 @@
     padding: 15px 15px 15px 10px;
 }
 #total{
-    height: 35px;
+    margin-top: 20px;
+    height: 60px;
     color: black;
     /* border: 1px solid purple; */
     font-size: 16px;
     line-height: 20px;
-    height: 25px;
     margin-bottom: 20px;
-    padding: 8px 15px 15px 15px;
+    padding: 10px 15px 15px 10px;
     border-bottom: 3px solid #e6e8ed
 }
 #total1{
+    margin-top: 20px;
     height: 35px;
     color:dodgerblue;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     font-size: 16px;
     line-height: 20px;
-    height: 25px;
+    height: 60px;
     font-weight: 700;
     padding: 10px 15px 15px 15px;
     border-bottom: 3px solid #e6e8ed;
@@ -228,8 +230,8 @@
     height: 40px;
     color: #050505;
     /* border: 1px solid red; */
-    font-size: 18px;
-    line-height: 16px;
+    font-size: 14px;
+    /* line-height: 16px; */
     padding: 10px 0 0 5px;
 }
 #processed{

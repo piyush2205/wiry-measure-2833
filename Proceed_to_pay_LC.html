@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles_LC/Proceed_to_pay_LC.css">
+    <link rel="stylesheet" href="./ps_style/ps_navbar2.css">
     <title>Processed To Pay</title>
 </head>
 
 <body>
     <!--*********************************** append navbar here *****************************-->
-    <div id="navbar"></div>
+    <div id="navbar_ps"></div>
     <div id="cont">
         <div id="bigbox">
             <!--****************** all fetch form data will be appended here ***********-->
@@ -114,7 +115,11 @@
 
 </body>
 </html>
-
+<script type="module"> import navbar2 from "/components/navbar2.js"
+    let nav = document.getElementById("navbar_ps")
+    nav.innerHTML = navbar2()
+    document.getElementById("query_ps_div").style.display="none"
+   </script>
 
 
 

@@ -1,8 +1,8 @@
 let footer=()=>{
 return`<div id="ps_footer_1">
-<div class="footer_div1_ps"><img src="./tripguru.png" alt="">
+<div class="footer_div1_ps"><img src="../tripguru.png" alt="">
 <h1 style="font-size: 12px;border-bottom: 1px solid #DCDFE0;padding: 10px;margin-top: -15px;margin-left: 5px;">India's Largest Travel Community</h1>
-<img   style="margin-top: 10px;margin-left: 30px;" src="./Web capture_12-11-2022_12423_www.tripoto.com.jpeg" alt="">
+<img   style="margin-top: 10px;margin-left: 30px;" src="../Web capture_12-11-2022_12423_www.tripoto.com.jpeg" alt="">
      <img style="margin-top: 20px;margin-left: 40px;width: 40%; "src="https://cdn1.tripoto.com/assets/2.9/img/logo/download-android-app.svg" alt=""></div>
 <div class="footer_div2_ps">
     <div>About Tripguru</div>

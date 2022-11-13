@@ -148,6 +148,6 @@ let Get_Data = async (ev) => {
       "Content-Type": "application/json"
     }
   });
-  window.location.href = "http://127.0.0.1:5500/wiry-measure-2833/Proceed_to_pay_LC.html"
+  window.location.href = "../Proceed_to_pay_LC.html"
 };
 //********************************************************************************************** */

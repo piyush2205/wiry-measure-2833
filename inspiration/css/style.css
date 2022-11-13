@@ -3,18 +3,19 @@
 
 
 
-body{
+#container_ts{
   width: 80%;
   margin: auto;
   font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
 }
-
 #TS_topbeachescards{
   border: 0px solid blue; 
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-template-rows: repeat(3,1fr);
   gap: 20px;
+  margin-top: 20px;
 }
 #TS_topbeachescards > .TS_cards{
     width: 90%;
@@ -27,7 +28,9 @@ body{
   height: 200px;
   border-radius: 5px;
 }
-
+#TS_topbeaches{
+  margin-top: 20px;
+}
 #TS_tripotoVlog{
 
   width: 100%;
@@ -256,3 +259,14 @@ body{
   border-radius: 8px;
 }
 
+
+#TS_beach_properties{
+margin-top: 50px;
+}
+#TS_top_vlog{
+  margin-top: 50px;
+}
+#TS_p{
+
+  margin-top: 20px;
+}

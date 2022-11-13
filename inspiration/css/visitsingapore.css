@@ -1,12 +1,13 @@
-body{
+#container_ts{
 
      width:70%;
      border: 0px solid red;
      margin: auto;
      font-family: circularairpro-bold,Helvetica,Arial,sans-serif;
+     margin-top: 1%;
 }
 .main-carousel{
-   
+  
     border: 0px solid blue;
     height: 90px;
 }
@@ -32,6 +33,7 @@ body{
   } */
   * { box-sizing: border-box; }
   .container {
+
     /* border: 1px solid #575757; */
     width: 100%;
     height: 320px;
@@ -50,6 +52,8 @@ body{
     z-index: 10;
   }
   .slideshow {
+  
+    margin-top: 20px;
     position: relative;
     height: 100%;
   }
@@ -74,10 +78,11 @@ body{
    .TS_poster1 > img {
     width: 100%;
     border-radius: 10px;
+    margin-top: 10px;
    }
    
    #TS_Festival {
-
+  margin-top: 50px;
     width: 100%;
     /* height: 700px; */
     border: 0px solid red;
@@ -96,6 +101,7 @@ body{
    }
    
    .TS_eventcontainer{
+    margin-top: 50px;
      width: 100%;
      /* height: 250px; */
      border: 0px solid red;
@@ -104,10 +110,7 @@ body{
    }
    .TS_eventcard{
 
-     width: 30%;
-     /* height: 95%; */
-     border: 0px solid blue;
-     line-height: 8px;
+     width: 30%; 
    }
 
    .TS_eventcard>img{
@@ -117,7 +120,7 @@ body{
    }
 
    .TS_eventcard>p{
-
+    margin-top: 10px;
     color: orangered;
     font-weight: bold;
     font-size: small;
@@ -161,7 +164,7 @@ body{
    }
 
    .TS_newinsingapore{
- 
+ margin-top: 20px;
     width: 100%;
      /* height: 250px;  */
     border:0px solid red;
@@ -242,4 +245,14 @@ body{
    .TS_mediacard>img{
     width: 100%;
     /* height: 100%; */
+   }
+
+
+   .TS_heading{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+   }
+   .TS_Para{
+    /* border: 1px solid red; */
+    margin-top: 20px;
    }

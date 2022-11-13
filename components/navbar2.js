@@ -1,6 +1,6 @@
 let navbar2=()=>{
     return`<div id="ps_navbar" style="background-color: #2f9bdb;">
-    <div class="ps_tripguru"><a href=""> <img src="./tripguru.png" alt=""></a></div>
+    <div class="ps_tripguru"><a href="../index.html"> <img src="../tripguru.png" alt=""></a></div>
     <div id="query_ps_div">
         <input type=" text" id="query_ps"
         placeholder="Search for itineraries, destinations, hotels or activities">
@@ -15,13 +15,13 @@ let navbar2=()=>{
                         alt="caretdown" style="height: 12px; width: 8px;"></a>
                 <ul class="dropdown_inspiration">
                     <div>
-                        <li><a href="/singapore">Visit Singapore</a></li>
+                        <li><a href="../inspiration/visitsingapore.html">Visit Singapore</a></li>
                     </div>
                     <div>
-                        <li><a href="/beaches">Beaches</a></li>
+                        <li><a href="../inspiration/beaches.html">Beaches</a></li>
                     </div>
                     <div>
-                        <li><a href="/mountains">Mountains</a></li>
+                        <li><a href="../inspiration/mountains.html">Mountains</a></li>
                     </div>
                     <div>
                         <li><a href="/heritage">Heritage</a></li>
@@ -57,7 +57,7 @@ let navbar2=()=>{
             <li><a href="/community">Forum</a></li>
         </div>
         <div class="ps_div_3">
-            <li><a href="/tour-packages">Packages</a></li>
+            <li><a href="../package.html">Packages</a></li>
         </div>
         <div class="ps_div_4">
             <li class="ps_publish"><a>Publish Trip&nbsp;<img
@@ -76,9 +76,11 @@ let navbar2=()=>{
                 </ul>
             </li>
         </div>
-        <div class="ps_div_5"><a href="">Sign in</a></div>
+        <div class="ps_div_5"><a href="../signup.html" id="Siginin_ps">Sign in</a></div>
     </div>
 </div>
    
 `
 }
+
+export default navbar2

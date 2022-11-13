@@ -15,10 +15,16 @@
 
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="../ps_style/ps_navbar2.css">
+        <link rel="stylesheet" href="../ps_style/footerps.css">
 
                                         
     </head>
     <body>
+        <div id="navbar_ps">
+
+        </div>
+      <div id="container_ts">
         <div id="TS_h1">
             <h1>Hill Station</h1>                                                                                                                                                                        
         </div>
@@ -257,7 +263,9 @@
                 <h3>Gorgeous Winter Wonderlands India</h3>
             </div>
         </div>
-        
+
+      </div>
+        <div id="ps_footer"></div>
     </body>
 
     <!-- Swiper JS -->
@@ -269,4 +277,12 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script src="./slider.js"></script>
+    <script type="module"> import navbar2 from "/components/navbar2.js"
+        let nav = document.getElementById("navbar_ps")
+        nav.innerHTML = navbar2()
+        console.log(navbar2())
+    
+        import footer from "/components/footer.js"
+        let foot = document.getElementById("ps_footer")
+        foot.innerHTML = footer()</script>
 </html>

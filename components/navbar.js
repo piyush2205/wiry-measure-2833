@@ -1,6 +1,6 @@
 let navbar =()=>{
     return `<div id="ps_navbar">
-                    <div class="ps_tripguru"><a href=""> <img src="./tripguru.png" alt=""></a></div>
+                    <div class="ps_tripguru"><a href="index.html"> <img src="./tripguru.png" alt=""></a></div>
                     <div id="ps_li_ui">
                         <div class="ps_div_1">
                             <li class="ps_inspiration" style="cursor:pointer ;"><a>Inspirations <img
@@ -8,16 +8,16 @@ let navbar =()=>{
                                         alt="caretdown" style="height: 12px; width: 8px;"></a>
                                 <ul class="dropdown_inspiration">
                                     <div>
-                                        <li><a href="/singapore">Visit Singapore</a></li>
+                                        <li><a href="./inspiration/visitsingapore.html">Visit Singapore</a></li>
                                     </div>
                                     <div>
-                                        <li><a href="/beaches">Beaches</a></li>
+                                        <li><a href="./inspiration/beaches.html">Beaches</a></li>
                                     </div>
                                     <div>
-                                        <li><a href="/mountains">Mountains</a></li>
+                                        <li><a href="./inspiration/mountains.html">Mountains</a></li>
                                     </div>
                                     <div>
-                                        <li><a href="/heritage">Heritage</a></li>
+                                        <li><a href="">Heritage</a></li>
                                     </div>
                                     <div>
                                         <li><a href="/weekend-guide">Weekend Guide</a></li>
@@ -50,7 +50,7 @@ let navbar =()=>{
                             <li><a href="/community">Forum</a></li>
                         </div>
                         <div class="ps_div_3">
-                            <li><a href="/tour-packages">Packages</a></li>
+                            <li><a href="./package.html">Packages</a></li>
                         </div>
                         <div class="ps_div_4">
                             <li class="ps_publish"><a>Publish Trip&nbsp;<img
@@ -69,7 +69,7 @@ let navbar =()=>{
                                 </ul>
                             </li>
                         </div>
-                        <div class="ps_div_5"><a href="">Sign in</a></div>
+                        <div class="ps_div_5" ><a href="./signup.html" id="Siginin_ps">Sign in</a></div>
                     </div>
                 </div>
                 <h1 id="ps_title"">India's Largest Community of Travellers</h1>

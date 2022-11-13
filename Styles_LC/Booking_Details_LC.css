@@ -95,7 +95,8 @@
     display: flex;
 }
 #sb1{
-    width: 780px;
+    
+    width: 880px;
     height: auto;
     margin-top: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -160,7 +161,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    padding: 15px 0 0 0;
+    padding: 15px 0 0 5px;
 }
 #title{
     font-size: 24px;
@@ -173,9 +174,9 @@
 }
 #contact{
     width: 780px;
-    height: 38px;
+    height: 48px;
     margin: 4px 0 4px 0;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     /* border: 1px solid purple; */
     display: flex;
@@ -194,18 +195,24 @@
 }
 #contact>span:nth-child(2){
     font-size: 14px;
-    line-height: 20px;
+    /* line-height: 20px; */
     text-align: center;
-    margin-top: 10px;
-    margin-right: 420px;
+    margin-top: 5px;
+    /* margin-right: 420px; */
+    width:25% ;
+    padding-top: 5px;
     cursor: pointer;
+    /* border: 1px solid red; */
 }
 #num:hover{
     color:#2f9bdb;
 }
 #num{
-    margin-top: 10px;
+    /* width: 200px; */
     color: red;
+    margin-left: 380px;
+    padding-top: 10px;
+    /* border: 1px solid brown; */
 }
 #duration{
     display: flex;
@@ -218,17 +225,20 @@
     width: 120px;
     height: 30px;
     color:white;
-    padding: 8px 8px 4px 8px;
+    padding-top: 5px;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     background-color: #359391;
+    margin-top: 5px;
+    /* border: 1px solid brown; */
 }
 #duration>div:nth-child(2){
-    margin-left: 500px;
+    margin-left: 525px;
     font-size: 20px;
     font-weight: 700;
     padding-right: 8px;
+    /* border: 1px solid red; */
 }
 #location{
     width: 770px;
@@ -258,27 +268,38 @@
     padding-left: 5px;    
 }
 #meals{
+    display: flex;
     width: 780px;
-    height: 54px;
+    height:50px;
     /* border: 1px solid purple;    */
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     margin-bottom: 5px;
+    gap: 20px;
+    margin-top: 20px;
 }
-#meals>span>img{
+#meals div{
+    /* border:  1px solid red; */
+    display: flex;
+
+}
+#meals>div>img{
     height: 20px;
     width: 20px;
-    /* border: 1px solid red; */
+    /* border: 1px solid brown; */
     margin: 10px 5px 10px 5px;
 }
-#meals>span>span{
-    height: 18px;
-    width: 18px;
-    /* border: 1px solid red; */
-    margin: 0px 5px 0px 5px;
+#meals>div>span{
+    /* height: 18px; */
+    /* width: 18px; */
+    /* border: 1px solid blue; */
+    text-align: center;
+    margin: auto;
+    /* margin: 0px 5px 0px 5px; */
 }
 #overview{
     /* border: 1px solid blue; */
+    border-top: 1px solid #b8b4c0;
     font-size: 18px;
     line-height: 23px;
     margin-top: 10px;   
@@ -288,8 +309,15 @@
 #overview>h2{
     font-weight: 700;
     /* border: 1px solid red; */
-    margin-top: 0px;
-}   
+    margin-top: 25px;
+    margin-bottom: 25px;
+}  
+#overview{
+    /* border: 1px solid red; */
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}    
 #itinery{
     width: 770px;
     height: auto;
@@ -298,6 +326,11 @@
     font-family: Arial, Helvetica, sans-serif;
     /* border: 1px solid red; */
     padding-left: 8px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#itinery >h2{
+    margin-bottom: 20px;
 }
 .accordion {
     background-color: #eee;
@@ -337,6 +370,8 @@
     font-family: Arial, Helvetica, sans-serif;
     /* border: 1px solid red; */
     padding-left: 8px;
+    margin-top: 20px;
+    padding: 5px;
   }
   #exclusions{
     width: 770px;
@@ -346,6 +381,8 @@
     font-family: Arial, Helvetica, sans-serif;
     /* border: 1px solid red; */
     padding-left: 8px;
+    padding: 5px;
+    margin-top: 20px;
   }
  .panel p{
     width: 770px;
@@ -360,7 +397,8 @@
 /* ********************************************************************************************* */
 /* small box 2 css here */
 #formdiv{
-    width: 330px;
+    /* border: 1px solid brown; */
+    width: 400px;
     height: 680px;
     display: block;
     border-radius: 5px;
@@ -374,10 +412,11 @@
     
 }
 #formdiv>h1{
-    width: 300px;
+margin-bottom: 20px;
+margin-left: 15px;
+    width: 350px;
     height: 25px;
-    margin: 0px;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 700;
     line-height: 17px;
     text-align: center;
@@ -385,6 +424,7 @@
     padding: 15px 15px 15px 10px;
 }
 #bookform{
+    margin-top: 10%;
     width: 330px;
     margin-left: 30px;
     height: 603px;
@@ -396,8 +436,9 @@
     margin: auto;
 }
 #bookform>input{
-    width: 305px;
-    height: 25px;
+    /* margin-top: 10px; */
+    width: 100%;
+    height: 35px;
     margin-bottom: 15px;
     font-size: 14px;
     border: 2px solid #DDDDDD;
@@ -405,13 +446,14 @@
     font-weight: 700;
 }
 #bookform>select{
-    width: 330px;
+    width: 328px;
     height: 40px;
     font-weight: 700;
     margin-bottom: 15px;
     border: 2px solid #DDDDDD;
 }
 #wp{
+    
     width: 18px;
     height: 18px;
 }

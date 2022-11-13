@@ -44,13 +44,13 @@ window.onload = () => {
 
 
 // no need right now************************** */
-// let pay = document.getElementById("processed");
+let pay = document.getElementById("processed");
 // let el = document.getElementById("payment");
 
-// pay.onclick = ()=>{
-//   // el.style.display = 'block';
-//   window.location.href = ""
-// }
+pay.onclick = ()=>{
+  // el.style.display = 'block';
+  window.location.href = "https://rzp.io/i/iQvflb4XUb"
+}
 
 // let done = document.getElementById("done");
 // done.onclick = ()=>{

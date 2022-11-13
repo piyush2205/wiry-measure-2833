@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Styles_LC/Booking_Details_LC.css">
+    <link rel="stylesheet" href="./ps_style/ps_navbar2.css">
+    <link rel="stylesheet" href="./ps_style/footerps.css">
     <title>Booking Details</title>
 </head>
 
@@ -17,7 +19,7 @@
         </div>
     </div>
 
-    <div id="navbar"></div>
+    <div id="navbar_ps"></div>
     <div id="cont">
         <div id="bigbox">
             <!--****************** all fetch image data will be appended here ***********-->
@@ -85,21 +87,21 @@
                     <hr>
                     <div id="highlight">Highlights</div>
                     <div id="meals">
-                        <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425505_meals.png"
-                                alt=""><span>Meals</span></span>
-                        <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425506_breakfast.png"
-                                alt=""><span>Daily Breakfast</span></span>
-                        <span><img
+                        <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425505_meals.png"
+                                alt=""><span>Meals</span></div>
+                        <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425506_breakfast.png"
+                                alt=""><span>Daily Breakfast</span></div>
+                        <div><img
                                 src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425508_sightseeing.png"
-                                alt=""><span>Sightseeing</span></span>
-                        <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425508_camp.png"
-                                alt=""><span>Camp</span></span>
-                        <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388015_adventure.png"
-                                alt=""><span>Adventure</span></span>
-                        <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388052_nature.png"
-                                alt=""><span>Nature</span></span>
-                        <span><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388084_wellness.png"
-                                alt=""><span>Wellness</span></span>
+                                alt=""><span>Sightseeing</span></div>
+                        <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1555425508_camp.png"
+                                alt=""><span>Camp</span></div>
+                        <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388015_adventure.png"
+                                alt=""><span>Adventure</span></div>
+                        <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388052_nature.png"
+                                alt=""><span>Nature</span></div>
+                        <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2/Image/1592388084_wellness.png"
+                                alt=""><span>Wellness</span></div>
                     </div>
                     <hr>
                 </div>
@@ -262,7 +264,7 @@
                             <option value="Dorm Bed x2 @12,000" value="12,000">Dorm Bed x2 @12,000</option>
                         </select>
                         <input type="date" id="checkdate" required>
-                        <div><input type="checkbox"><span>Send me updates for this booking on <img
+                        <div><input type="checkbox"><span style="margin-left:5px ;">Send me updates for this booking on <img
                                     src="https://cdn1.tripoto.com/assets/2.9/img/logo/whatsapp-logo.png" alt="whatsapp"
                                     id="wp"></span></div>
                         <div id="amount">
@@ -281,8 +283,17 @@
     </div>
 
     <!--************************************** append footer here ************************** -->
-    <div id="footer"></div>
+    <div id="ps_footer"></div>
 </body>
 <script src="./Scripts_LC/Booking_Details_LC.js"></script>
 <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+<script type="module"> import navbar2 from "/components/navbar2.js"
+    let nav = document.getElementById("navbar_ps")
+    nav.innerHTML = navbar2()
+    document.getElementById("ps_navbar").style.marginTop="8px"
+    document.getElementById("query_ps_div").style.display="none"
+
+    import footer from "/components/footer.js"
+    let foot = document.getElementById("ps_footer")
+    foot.innerHTML = footer()</script>
 </html>
