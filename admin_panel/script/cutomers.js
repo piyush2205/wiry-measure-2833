@@ -20,7 +20,7 @@ let renderDom=(data)=>{
     })
 }
 
-let customerdata=({name,email,mobile,city,people,roomtype,date,final_amount})=>{
+let customerdata=({id,name,email,mobile,city,people,roomtype,date,final_amount})=>{
     let tr=document.createElement('tr');
     tr.setAttribute('class','card_row');
 
@@ -32,6 +32,7 @@ let customerdata=({name,email,mobile,city,people,roomtype,date,final_amount})=>{
     let r=document.createElement("td");
     let da=document.createElement("td");
     let a=document.createElement("td");
+    let rej=document.createElement('td');
 
     n.innerText=name;
     e.innerText=email;
@@ -41,10 +42,29 @@ let customerdata=({name,email,mobile,city,people,roomtype,date,final_amount})=>{
     r.innerText=roomtype;
     da.innerText=date;
     a.innerText=final_amount;
+    rej.innerText="Reject"
+    rej.style.backgroundColor="Red"
+    rej.style.color="Black"
+    rej.style.fontWeight="bold";
+    rej.style.cursor="pointer";
+    rej.onclick=()=>{
+        deletecustomer(id)
+    }
 
-    tr.append(n,e,m,c,p,r,da,a)
+    tr.append(n,e,m,c,p,r,da,a,rej)
 
     return tr;
 
 
 }
+let deletecustomer=async(id)=>{
+    await fetch(`${custdata}/${id}`,{
+        method:"DELETE",
+    });
+    
+    getdata();
+    window.location.reload();
+
+    
+}
+

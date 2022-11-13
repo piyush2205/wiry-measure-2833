@@ -85,7 +85,7 @@ let pacakagedata=({id,cirDesc,price,location,banner,days})=>{
  */}
 
 let customerdata=({name,city,final_amount})=>{
-
+    
     income.innerText=`₹${final_amount}`
 
     let div=document.createElement('div')

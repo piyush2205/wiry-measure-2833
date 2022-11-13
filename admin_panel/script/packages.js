@@ -126,6 +126,7 @@ let deletepackage=async(id)=>{
     });
     
     getdata();
+    window.location.reload();
 
     
 }
