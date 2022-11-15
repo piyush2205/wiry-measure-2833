@@ -85,7 +85,21 @@ let pacakagedata=({id,cirDesc,price,location,banner,days})=>{
  */}
 
 let customerdata=({name,city,final_amount})=>{
+    let arr=[]
+    for(let i=0;i<final_amount.length;i++){
+        arr.push(final_amount)
+    }
+    console.log(arr)
+
+    // let sum=0;
+    // for(let i=0;i<=final_amount.length;i++){
+    //     // sum=sum+parseInt(final_amount[i])
+    //     console.log(final_amount)
+        
+    // }
+    // console.log(sum)
     
+
     income.innerText=`₹${final_amount}`
 
     let div=document.createElement('div')
@@ -111,6 +125,8 @@ let customerdata=({name,city,final_amount})=>{
 
 
 }
+
+
 
 //get the container and append all the data
 let renderDom=(data)=>{
@@ -201,9 +217,10 @@ async function searchpacakages(){
     //     main.style.display="none"
     // }
 
+function logout(){
+    window.location.href="./authetication.html"
+}
    
- 
-    
 function openpackages(){
     window.location.href="./admin_packages.html"
 }
@@ -214,3 +231,24 @@ function opencustomers(){
     
 
 
+//date 
+
+const el = document.getElementById('displayDateTime');
+const dateString = new Date().toDateString();
+el.textContent = dateString;
+
+// let month=getMonth();
+// let date=getDate();
+// const el = document.getElementById('displayDateTime');
+// el.innerText=month-date;
+
+// var today = new Date()
+// var curHr = today.getHours()
+
+// if (curHr < 12) {
+//   let gd=document.getElementById('gd').innerText="Good Morning"
+// } else if (curHr < 18) {
+//     let gd=document.getElementById('gd').innerText="Good Afternoon"
+// } else {
+//     let gd=document.getElementById('gd').innerText="Good Evening"
+// }

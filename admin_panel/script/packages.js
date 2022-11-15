@@ -3,7 +3,6 @@ let api=`https://server-tripguru.onrender.com/api/package`
 
 document.getElementById('submit').addEventListener('click',async function getformdata(event){
     event.preventDefault();
-    // console.log("working")
 
     let cirDesc=document.getElementById('pack').value;
     let price=document.getElementById('price').value;
@@ -11,11 +10,9 @@ document.getElementById('submit').addEventListener('click',async function getfor
     let location=document.getElementById('location').value;
     let days=document.getElementById('duration').value;
     let banner=document.getElementById('image').value;
+    let id=Date.now();
 
-    let package={cirDesc,price,category,location,days,banner}
-    console.log(package)
-
-    // console.log(package)
+    let package={cirDesc,price,category,location,days,banner,id}
         await fetch(api,{
             method:"POST",
             body:JSON.stringify(package),
@@ -45,21 +42,20 @@ document.getElementById('submit').addEventListener('click',async function getfor
 })
 
 
-let id_to_dlt;
+let id;
+
 // to show data in table from database
 async function getdata(){
-    let res1=await fetch(also_api_send)
+    let res=await fetch(also_api_send)
+    let data=await res.json()
+
+    let res1=await fetch(api)
     let data1=await res1.json()
+    data1.forEach=(el)=>{
+        renderDom(el.id)
+    }
 
-    let res2=await fetch(api)
-    let data2=await res2.json()
-
-    data2.forEach((el)=>{
-        id_to_dlt=el.id
-    })
-    console.log(id_to_dlt)
-    // console.log(data)
-    renderDom(data1);
+    renderDom(data);
     
 }
 getdata();
@@ -68,7 +64,8 @@ getdata();
 
 
 
-let pacakagedata=({id,cirDesc,price,location,banner,days,id_to_dlt})=>{
+
+let pacakagedata=({cirDesc,price,location,banner,days,id})=>{
 
     let tr=document.createElement('tr');
     tr.setAttribute('class','card_row');
@@ -92,9 +89,11 @@ let pacakagedata=({id,cirDesc,price,location,banner,days,id_to_dlt})=>{
     dlt.style.background="red"
     dlt.style.cursor="pointer"
     dlt.style.fontWeight="bold";
+
+   
     dlt.onclick=()=>{
         deletepackage(id);
-        delete_another_package(id_to_dlt);
+        delete_another_package_function(id)
     }
     
     
@@ -136,6 +135,7 @@ let delete_another_package_function=async(id)=>{
     await fetch(`${api}/${id}`,{
         method:"DELETE",
     });
+    getdata();
 }
 
 
