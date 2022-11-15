@@ -84,12 +84,9 @@ let pacakagedata=({id,cirDesc,price,location,banner,days})=>{
     </div>
  */}
 
-let customerdata=({name,city,final_amount})=>{
-    let arr=[]
-    for(let i=0;i<final_amount.length;i++){
-        arr.push(final_amount)
-    }
-    console.log(arr)
+let sum=0;
+function customerdata(name,city,final_amount){
+    sum=sum+final_amount
 
     // let sum=0;
     // for(let i=0;i<=final_amount.length;i++){
@@ -100,7 +97,7 @@ let customerdata=({name,city,final_amount})=>{
     // console.log(sum)
     
 
-    income.innerText=`₹${final_amount}`
+    income.innerText=`₹${sum}`
 
     let div=document.createElement('div')
     div.setAttribute('id','info')
@@ -143,7 +140,7 @@ let renderDom2=(data)=>{
     let cont2=document.getElementById('container2')
     cont2.innerHTML=null;
     data.forEach((el)=>{
-        let card2=customerdata(el);
+        let card2=customerdata(el.name,el.city,+(el.final_amount.replace(/,/g,'')));
         cont2.append(card2)
     })
 }
@@ -227,6 +224,9 @@ function openpackages(){
       
 function opencustomers(){
     window.location.href="./customers.html"
+}
+function accountopen(){
+    window.location.href="./account_edit.html"
 }
     
 

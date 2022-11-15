@@ -139,3 +139,12 @@ let delete_another_package_function=async(id)=>{
 }
 
 
+function opendashboard(){
+    window.location.href="./admin.html"
+}
+function accountopen(){
+    window.location.href="./account_edit.html"
+}
+function logout(){
+    window.location.href="./authetication.html"
+}

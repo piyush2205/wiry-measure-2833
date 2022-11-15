@@ -432,6 +432,8 @@ tr td:last-child{
   input[type="text"],
   input[type="number"],
   input[type="url"],
+  input[type="password"],
+  input[type="email"],
   select,
   textarea {
     width: 100%;
@@ -456,6 +458,10 @@ tr td:last-child{
   }
 #submit:hover {
     background-color: #3973b6;
+}
+label{
+    color:rgb(121, 111, 111);
+    font-weight: bold;
 }
 
 /* dropdown */

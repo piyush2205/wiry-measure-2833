@@ -34,7 +34,7 @@
                 </li>
                 <li>
                     <a href="./customers.html">
-                        <span class="las la-user"></span>
+                        <span class="las la-users"></span>
                         <span>Customers</span>
                     </a>
                 </li>
@@ -45,9 +45,9 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
-                        <span class="las la-users"></span>
-                        <span>Team</span>
+                    <a href="./account_edit.html">
+                        <span class="las la-user"></span>
+                        <span>Account</span>
                     </a>
                 </li>
             </ul>
@@ -75,12 +75,27 @@
                 <div>
                     <h4>Aakash Mukherjee</h4>
                     <small>Admin</small>
+                    <div>
+                        <label class="dropdown">
+                            <div class="dd-button" style="border: 3px solid #8c52ff; border-radius:20px">
+                              Packages
+                            </div>
+                            <input type="checkbox" class="dd-input" id="test">
+                            <ul class="dd-menu" style="margin-right: 50px;width: 130px;">
+                                <li onclick="opendashboard()">Dashboard</li>
+                                <li class="divider"></li>
+                                <li onclick="accountopen()">Account</li>
+                                <li class="divider"></li>
+                                <li onclick="logout()">Log-Out</li>
+                            </ul>  
+                        </label> 
+                    </div>
                 </div>
             </div>
     </header>
     
     <body id="takeingdata" style="margin-top: 110px;text-align: center;">
-        <h1 style="text-align: center;font-size: 30px;text-transform: uppercase;font-family: monospace;color:var(--main);padding: 10px;">Packages Records</h1>
+        <h1 style="text-align: center;font-size: 30px;text-transform: uppercase;font-family: monospace;color:#8c52ff;padding: 10px;">Packages Records</h1>
         <div style=" display: flex;justify-content: space-evenly;">
             <!-- *****using form here ****  -->
             <form id="form" style="margin-top: 10px;width: 30%;box-shadow: rgba(3, 102, 214, 0.8) 0px 0px 0px 3px;padding:30px;border-radius: 20px;height: fit-content;">
@@ -145,7 +160,7 @@
         </div>
     </body>
 </div>
-    <script src="./script/packages.js"></script>
+    <script src="./script/admin_packages.js"></script>
 </body>
 
 </html>
