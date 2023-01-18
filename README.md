@@ -48,7 +48,7 @@ This project is licensed under the [GPL](https://www.gnu.org/licenses/gpl-3.0.en
 
 Here is the deployed link :- [TripGuru](https://prismatic-taffy-e918f9.netlify.app)
 
-##Links
+#Links
 Site link->https://prismatic-taffy-e918f9.netlify.app/
 Admin PAnel->https://darling-kataifi-e8e633.netlify.app
 
