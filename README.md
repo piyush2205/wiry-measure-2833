@@ -98,8 +98,8 @@ Admin Panel->https://darling-kataifi-e8e633.netlify.app
      </div>
     </li> 
 </ul>
-## Below are some of the Screenshots with features of Admin site:
 
+## Below are some of the Screenshots with features of Admin site:
 <ul>
     <li>
      <div>
