@@ -54,7 +54,7 @@ Site link->https://prismatic-taffy-e918f9.netlify.app/
 
 Admin Panel->https://darling-kataifi-e8e633.netlify.app
 
-## Below are some of the Screenshots with features:
+## Below are some of the Screenshots with features of main site:
 <ul>
     <li>
      <div>
@@ -97,4 +97,44 @@ Admin Panel->https://darling-kataifi-e8e633.netlify.app
          <img src="https://user-images.githubusercontent.com/110044436/218864419-2e215db9-b976-44b6-8312-19cb16adf195.png" alt="Pricing"/>
      </div>
     </li> 
+</ul>
+## Below are some of the Screenshots with features of Admin site:
+
+<ul>
+    <li>
+     <div>
+         <h4>Admin Login Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218865549-4035aeb8-bc4d-4d8b-bb39-cebcdb4d9835.png" alt="login"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Admin Dashboard Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218865790-28668e4d-ec69-464a-93ea-ffc86b051ef8.png" alt="dashboard"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Search packages</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218866040-7d0a6519-89dd-4382-b637-3ad75a87d738.png" alt="search"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>packages Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218867294-fbc340e6-39a6-4d05-bc7c-cedc0566248a.png" alt="package"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Customers Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218867523-b3cc99a8-0b96-4592-ba67-134fe89d49d9.png" alt="customers"/>
+     </div>
+    </li>
+     <li>
+     <div>
+         <h4>Account Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218867714-3f24af51-f8ed-406b-a8f9-b513cf3bd956.png" alt="account"/>
+     </div>
+    </li>
 </ul>
