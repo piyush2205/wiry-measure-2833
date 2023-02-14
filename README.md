@@ -54,3 +54,47 @@ Site link->https://prismatic-taffy-e918f9.netlify.app/
 
 Admin Panel->https://darling-kataifi-e8e633.netlify.app
 
+## Below are some of the Screenshots with features:
+<ul>
+    <li>
+     <div>
+         <h4>Homepage Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218862012-44f4c502-af05-4db7-9e77-6e3b8a059a9d.png" alt=" homepage"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Singapore Page</h4>
+         <img src="https://user-images.githubusercontent.com/110044436/218862261-6155c17a-8019-4194-8f97-7bd241e6d498.png" alt="singapore"/>
+      </div>
+    </li>
+    <li>
+     <div>
+         <h4>Beaches Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218862730-87d869c4-74aa-481e-9fdb-98f0748c9335.png" alt="Beaches"/>
+    </li>
+     <li>
+     <div>
+         <h4>Packages Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218863445-82739eb7-3071-4524-bd1f-a223b99a40d5.png" alt="Packages"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Login</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218863819-43a5115c-4ec0-4619-9963-fc9b85c787e2.png" alt=" Login"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Singal Package Page</h4>
+          <img src="https://user-images.githubusercontent.com/110044436/218864156-40fc52b5-5c25-451a-ae2b-a7e91bc37444.png" alt="singal_package"/>
+     </div>
+    </li>
+    <li>
+     <div>
+         <h4>Pricing Page</h4>
+         <img src="https://user-images.githubusercontent.com/110044436/218864419-2e215db9-b976-44b6-8312-19cb16adf195.png" alt="Pricing"/>
+     </div>
+    </li> 
+</ul>
