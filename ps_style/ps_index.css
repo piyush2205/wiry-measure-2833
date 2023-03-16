@@ -3,6 +3,7 @@
     font-weight: 700;
 }
 
+
 #ps_box {
     /* border: 1px solid red; */
     margin-top: 180px;
@@ -26,17 +27,19 @@
 
 #ps_4_option div img {
     width: 100%;
-    
+
 }
+
 /* .................................................... */
 #_spotlight {
     /* border: 2px solid brown; */
     margin-top: 50px;
 }
-.swiper-navBtn{
+
+.swiper-navBtn {
 
 
-margin-left:-10px;
+    margin-left: -10px;
 }
 
 #ps_spotlight {
@@ -49,7 +52,7 @@ margin-left:-10px;
     gap: 20px;
 }
 
-#ps_spotlight div :hover{
+#ps_spotlight div :hover {
     cursor: pointer;
     /* border: 1px solid skyblue; */
 }
@@ -68,6 +71,7 @@ margin-left:-10px;
     font-size: 18px;
     word-wrap: break-word;
     line-height: 1.5;
+    color: black;
 }
 
 #ps_spotlight div div:nth-child(2) {
@@ -75,31 +79,47 @@ margin-left:-10px;
     margin-top: 5px;
     font-size: 12px;
 }
+
 /* ....................................................... */
 .slide_img_ps {
-   /* / border: 1px solid darkblue; */
+    border: 1px solid darkblue;
     width: 1160px;
-    margin-left: 180px;
+    margin: auto;
     margin-top: 50px;
     border-radius: 5px;
 }
+#slideshow_ps {
+    /* border: 1px solid green; */
+    height: auto;
+    width: 1160px;
+    margin: auto;
+}
 
-#slideshow_ps :hover{
-    cursor: pointer; 
+#slideshow_ps :hover {
+    cursor: pointer;
 
 }
-/* ................................................ */
-#slideshow_ps_2 :hover{
-    cursor: pointer; 
 
+/* ................................................ */
+#slideshow_ps_2 :hover {
+    cursor: pointer;
+
+}
+
+#slideshow_ps_2 {
+    /* border: 1px solid green; */
+    height: auto;
+    width: 1160px;
+    margin: auto;
 }
 
 #slideshow_ps_2 img {
     width: 1160px;
-    margin-left: 180px;
+    margin: auto;
     margin-top: 50px;
     border-radius: 5px;
 }
+
 /* ............................................................... */
 #_placevisit_ps {
     /* border: 2px solid brown; */
@@ -123,7 +143,7 @@ margin-left:-10px;
     border-radius: 5px;
 }
 
-#ps_placevisit div :hover{
+#ps_placevisit div :hover {
     cursor: pointer;
 }
 
@@ -153,6 +173,7 @@ margin-left:-10px;
     margin-top: 5px;
     font-size: 18px;
 }
+
 /* ............................................... */
 #ps_spotlight_rajsthan {
     /* border: 1px solid red; */
@@ -169,8 +190,9 @@ margin-left:-10px;
     height: 172px;
     border-radius: 5px;
 }
+
 #ps_spotlight_rajsthan div:hover {
-   cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -183,6 +205,7 @@ margin-left:-10px;
     word-wrap: break-word;
     line-height: 1.5;
 }
+
 /* ...................................................... */
 #results_ps {
     /* border: 1px solid red; */
@@ -193,6 +216,7 @@ margin-left:-10px;
     margin-top: 10px;
     gap: 20px;
 }
+
 /* .............................................................. */
 .book_tab {
     /* border:  1px solid black; */
@@ -206,6 +230,7 @@ margin-left:-10px;
     height: 186px;
     border-radius: 5px;
 }
+
 .img_ps:hover {
     /* border:  1px solid black; */
     cursor: pointer;
@@ -217,10 +242,12 @@ margin-left:-10px;
     margin-top: 10px;
     display: flex;
 }
+
 .book_tab div:nth-child(4):hover {
     /* border:  1px solid black; */
     cursor: pointer;
 }
+
 .book_tab div:nth-child(4) img {
     /* border: 1px solid blue; */
 
@@ -257,7 +284,7 @@ margin-left:-10px;
 
 .book_tab div:nth-child(6):hover {
     /* border: 1px solid violet; */
-cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -273,7 +300,7 @@ cursor: pointer;
 }
 
 .div1_ps_creator {
-   /*  border: 1px solid teal; */
+    /*  border: 1px solid teal; */
     width: 1140px;
     margin: auto;
 }
@@ -281,7 +308,7 @@ cursor: pointer;
 .div1_ps_creator p {
     margin-top: 5px;
     font-size: 16px;
-    color: #333333; 
+    color: #333333;
 }
 
 #img_creators_ps {
@@ -326,27 +353,27 @@ cursor: pointer;
 }
 
 /* ............................................................ */
-#ps_footer_1{
+#ps_footer_1 {
     display: flex;
     /* border: 1px solid blue; */
     margin-top: 50px;
     border-top: 1px solid #DCDFE0;
     border-bottom: 1px solid #DCDFE0;
     padding-bottom: 60px
-
 }
 
-.footer_div1_ps{
+.footer_div1_ps {
     margin-top: 50px;
     /* border: 1px solid red; */
     margin-left: 20px;
     width: 50%;
 }
-.footer_div1_ps  img{
+
+.footer_div1_ps img {
     width: 50%;
 }
 
-.footer_div2_ps{
+.footer_div2_ps {
     /* border: 1px solid blue; */
     height: auto;
     width: 286px;
@@ -354,21 +381,54 @@ cursor: pointer;
     display: block;
 }
 
-.footer_div2_ps div{
+.footer_div2_ps div {
     /* font-size: 12px; */
     /* border: 1px solid red; */
     margin-top: 8px;
     width: 200px;
 }
 
-.footer_div2_ps div a{
+.footer_div2_ps div a {
     font-size: 12px;
     /* border: 1px solid red; */
     margin-top: 8px;
-    color: #4b4a4a; ;
+    color: #4b4a4a;
+    ;
     /* width: 200px; */
 }
 
-.book_now_ps:hover{
-cursor: pointer;
+.book_now_ps:hover {
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:821px) {
+
+    .slide_img_ps {
+        border: 1px solid darkblue;
+        width: 1160px;
+        margin-left:0;
+        margin-top: 50px;
+        border-radius: 5px;
+ }
+
+ #slideshow_ps_2 img {
+    width: 1160px;
+    margin-left:0;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+  #banner_img {
+    background-position: 100% 30%;
+    object-position: 100% 30%;
+    object-fit: cover; 
+     height: 340px;
+     position: absolute;
+    width: 1160px !important
+ }
+ #ps_container{
+    width:1160px;
+ }
 }
