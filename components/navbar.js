@@ -73,7 +73,7 @@ let navbar =()=>{
                     </div>
                 </div>
                 <h1 id="ps_title"">India's Largest Community of Travellers</h1>
-                    <div>
+                    <div style="margin: auto;" id="search_ps" ">
                             <input type=" text" id="query_ps"
                     placeholder="Search for itineraries, destinations, hotels or activities">
                     <img id="_search_icon_ps"
