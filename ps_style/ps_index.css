@@ -82,7 +82,7 @@
 
 /* ....................................................... */
 .slide_img_ps {
-    border: 1px solid darkblue;
+    /* border: 1px solid darkblue; */
     width: 1160px;
     margin: auto;
     margin-top: 50px;
@@ -406,7 +406,7 @@
 @media screen and (max-width:821px) {
 
     .slide_img_ps {
-        border: 1px solid darkblue;
+        /* border: 1px solid darkblue; */
         width: 1160px;
         margin-left:0;
         margin-top: 50px;
