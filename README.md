@@ -50,7 +50,7 @@ Here is the deployed link :- [TripGuru](https://prismatic-taffy-e918f9.netlify.a
 
 ## Links
 
-Site link->https://prismatic-taffy-e918f9.netlify.app/
+Site link->https://legendary-crumble-177f3b.netlify.app
 
 Admin Panel->https://darling-kataifi-e8e633.netlify.app
 
