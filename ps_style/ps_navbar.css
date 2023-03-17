@@ -8,7 +8,6 @@
     width: 100%;
 }
 #ps_navbar{
-    
     display: flex;
     justify-content:space-between;
     position:relative

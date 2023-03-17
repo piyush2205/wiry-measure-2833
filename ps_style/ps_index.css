@@ -408,7 +408,9 @@
 #search_ps{
     width: 640px;
 }
-
+.ps_place{
+    margin-top: 50px !important;
+}
 
 @media all and (max-width:1366px) {
     #ps_container {
@@ -614,7 +616,7 @@
     #ps_box {
         width: 90%;
         margin: auto;
-        margin-top: 150px;
+        margin-top: 100px;
         /* border: 1px solid red; */
 
     }
@@ -633,14 +635,14 @@
         /* border: 1px solid darkblue; */
         width: 100%;
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 5px;
     }
 
     #slideshow_ps_2 img {
         width: 100%;
         margin-left: 0;
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 5px;
     }
 
@@ -660,10 +662,23 @@
 
     #ps_spotlight {
         width: auto;
-       
+      
+    }
+
+    #_spotlight{
+        margin-top: 20px;
+    }
+
+    #ps_spotlight img {
+        width: auto;
+       /* border:  1px solid red; */
+       height: 100px !important;
     }
 
     #ps_4_option {
+       
+          /* border:  1px solid red; */
+       
         width: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -681,7 +696,7 @@
     #ps_placevisit div img {
        
         width: 100%;
-        height: 250px;
+        height: 150px;
         border-radius: 5px;
     }
 
@@ -693,12 +708,16 @@
         gap: 25px;
         /* width: 720px; */
     }
+    #_placevisit_ps{
+        margin-top: 20px;
+    } 
 
+    
 
     #ps_spotlight_rajsthan div img {
 
         width: 100%;
-        height: 250px;
+        height: 150px;
         border-radius: 5px;
         text-align: center;
     }
@@ -740,7 +759,7 @@
         grid-template-rows: repeat(1, 1fr);
         width: auto;
         margin: auto;
-        margin-top: 10px;
+        margin-top: 20px;
         gap: 20px;
     }
 
@@ -758,7 +777,7 @@
         width: 100%;
         height: auto;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     #ps_spotlight div img {
         width: 100%;
@@ -776,7 +795,7 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .footer_div1_ps {
-        margin-top: 50px;
+        margin-top: 20px;
         /* border: 1px solid red; */
         margin-left: 20px;
         width: auto;
@@ -791,19 +810,69 @@
     }
 
     #search_ps{
-        margin: auto !important;
-        width: auto !important;
+       width: auto;
+       margin: auto;
+       /* align-items: center; */
+       /* justify-items: center; */
+       text-align: center;
+        /* display: none; */
     }
-
+    #_search_icon_ps{
+        display: none;
+    }
 
      
     #query_ps{
         margin-top: 1%;
-    border-radius: 5px;
+        border-radius: 5px;
     /* border: 1px solid red; */
-    height: 52px;
-    position: relative;
+        height: 52px;
+        position: relative;
         margin: auto !important;
         width: auto !important;
     }
+
+    .ps_div_2  {
+        display: none !important;
+    }
+    .ps_div_4  {
+        display: none !important;
+    }
+
+    .ps_tripguru{
+      width: 250px !important;
+    }
+    .ps_div_5{
+        /* border:  1px solid red; */
+        width: 60px !important; 
+       
+    }
+    #ps_li_ui{
+        gap: 0px !important;
+        padding: 2px !important;
+        /* border: 1PX solid RED; */
+        width: auto !important;
+        margin-left: auto !important;
+        font-size: 13.5px !important;
+    }
+    .ps_tripguru img{
+        /* border: 1px solid red; */
+        margin-right: auto !important;
+        margin-top: 12px !important;
+        width: 35%;
+    }
+    
+
+    .slide-text{
+       /* border: 1px solid green; */
+        text-overflow: ellipsis;
+        overflow: auto;
+        flex-wrap:wrap;
+        height: 50px;
+        font-size: 13px !important;
+    }
+    .ps_place{
+        margin-top: 20px !important;
+    }
+   
 }
